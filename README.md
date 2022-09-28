@@ -12,7 +12,15 @@ Before the web interface is built and real data sets are
 found/created, the algorithms will be implemented and tested
 using python generated data in the form of a .txt file. 
 The data will be pre-processed and the algorithms will be
-implemented using the processed data. 
+implemented using the processed data.
+
+- Data Generation: 
+        `dataGenerator.py` generates 10000 rows of data where each
+        row contains 2-15 random integers from 0-9. using the command 
+        ```
+        python3 dataGenerator.py > data.txt
+        ```
+        pipes the ouptut from the data generator into a usable text file 
 
 ## Algorithms
 - BUC (Bottom Up Computation)
