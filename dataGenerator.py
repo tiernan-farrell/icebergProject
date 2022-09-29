@@ -9,7 +9,7 @@ def main():
         random.seed(i)
         numInRow = random.randint(2, 15)
         for j in range(numInRow):
-            line += str(random.randint(0, 9))
+            line += str(random.randint(0, 6))
             line += " "
         print(line )
     
