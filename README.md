@@ -23,9 +23,10 @@ implemented using the processed data.
         pipes the ouptut from the data generator into a usable text file 
 
 ## Algorithms
-- BUC (Bottom Up Computation)
-- Top-Down Computation 
-- APRIORI
-- H-Cubing
-- Star-Cubing
-- Multiway
+# BUC (Bottom Up Computation)
+
+# Top-Down Computation 
+# APRIORI
+# H-Cubing
+# Star-Cubing
+# Multiway

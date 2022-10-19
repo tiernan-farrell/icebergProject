@@ -16,7 +16,7 @@ def main():
         random.seed(i)
         for j in range(5):
             listVal.insert(j, random.randint(0, 6))
-        print(tuple(listVal))
+        print(listVal)
     
 
 if __name__ == "__main__": 
