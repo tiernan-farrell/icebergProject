@@ -15,8 +15,8 @@ The data will be pre-processed and the algorithms will be
 implemented using the processed data.
 
 - Data Generation: 
-        `dataGenerator.py` generates 10000 rows of data where each
-        row contains 2-15 random integers from 0-9. using the command 
+        `dataGenerator.py` generates 10000 tuples of data where each
+        tuples contains 5 random integers from 0-9. using the command 
         ```
         python3 dataGenerator.py > data.txt
         ```
