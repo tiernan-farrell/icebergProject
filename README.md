@@ -39,6 +39,8 @@ implemented using the processed data.
         at each level to see if they are above minsup. 
 
         ![output example](images/lattice.jpg)
+        <img width="458" alt="image" src="https://user-images.githubusercontent.com/63930496/197000331-6d14ecf9-54b7-4ba5-91b2-aadec6bb0bcd.png">
+        ![image](https://user-images.githubusercontent.com/63930496/197000331-6d14ecf9-54b7-4ba5-91b2-aadec6bb0bcd.png)
         For this cube lattice, the processing tree of the buc algorithm looks like this. 
 
         ![Alt text](https://github.com/tiernan-farrell/icebergProject/blob/main/images/processingTree.jpg "Buc Processing Tree")
