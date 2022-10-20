@@ -38,11 +38,11 @@ implemented using the processed data.
                 4. Recursion continues up the lattice and checks all combinations of attributes 
                 at each level to see if they are above minsup. 
 
-        ![Alt text](/images/lattice.jpg?raw=true "Cube Lattice")
+        ![Alt text](https://github.com/tiernan-farrell/icebergProject/blob/main/images/lattice.jpg "Cube Lattice")
 
         For this cube lattice, the processing tree of the buc algorithm looks like this. 
 
-        ![Alt text](/images/processingTree.jpg?raw=true "Buc Processing Tree")
+        ![Alt text](https://github.com/tiernan-farrell/icebergProject/blob/main/images/processingTree.jpg "Buc Processing Tree")
 
         Where the number next to the region in the lattice represents the order it is processed by BUC.
         BUC climbs the lattice recursively then decends downward. Notice all of the A's were processed 
