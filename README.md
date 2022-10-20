@@ -30,16 +30,15 @@ implemented using the processed data.
         the first attribute that are above the min support level are partitioned and re-evaluated. 
         Others are pruned. 
 
-                1. Sort database on attribute 0
-                2. If an attribute value meets minsup, recursively call the buc algorithm with the 
-                index of the next attribute as starting attribute and input as only those tuples with
-                the current value for attribute 0. 
-                3. If it does not meet minsup we prune it and dont add the counts to iceberg cube. 
-                4. Recursion continues up the lattice and checks all combinations of attributes 
-                at each level to see if they are above minsup. 
+        1. Sort database on attribute 0
+        2. If an attribute value meets minsup, recursively call the buc algorithm with the 
+        index of the next attribute as starting attribute and input as only those tuples with
+        the current value for attribute 0. 
+        3. If it does not meet minsup we prune it and dont add the counts to iceberg cube. 
+        4. Recursion continues up the lattice and checks all combinations of attributes 
+        at each level to see if they are above minsup. 
 
-        ![Alt text](https://github.com/tiernan-farrell/icebergProject/blob/main/images/lattice.jpg "Cube Lattice")
-
+        ![output example](images/lattice.jpg)
         For this cube lattice, the processing tree of the buc algorithm looks like this. 
 
         ![Alt text](https://github.com/tiernan-farrell/icebergProject/blob/main/images/processingTree.jpg "Buc Processing Tree")
