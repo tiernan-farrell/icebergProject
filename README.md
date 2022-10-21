@@ -71,7 +71,7 @@ pipes the ouptut from the data generator into a usable text file
 <img width="458" alt="image" src="https://user-images.githubusercontent.com/63930496/197000331-6d14ecf9-54b7-4ba5-91b2-aadec6bb0bcd.png" width="800">
 For this cube lattice, the processing tree of the buc algorithm looks like this:
 
-<img width="458" alt="image" src="https://github.com/tiernan-farrell/icebergProject/blob/main/images/processingTree.jpg?raw=true
+<img width="458" alt="image" src="https://github.com/tiernan-farrell/icebergProject//images/processingTree.jpg?raw=true
 " width="800">
 
 Where the number next to the region in the lattice represents the order it is processed by BUC.
