@@ -45,7 +45,30 @@ python3 dataGenerator.py > data.txt
 
 pipes the ouptut from the data generator into a usable text file
 
-  
+
+# Dependencies 
+        -python version 3.10.6
+        -pip version 22.3
+        -venv
+        -npm 
+        -flask
+        -flask-cors
+    
+
+# Web Interface
+
+To run the front end application, start a pyhon server and a http-server 
+Use:
+    ```$python3 buc.py``` 
+in the directory of the main project to start the python backend server 
+
+To start the frontend server, use: 
+    ```$npm install --global http-server
+       $http-server``` 
+
+in the /frontend directory. Navigate to the server that was started at 
+    `http://127.0.0.1:8080`
+From here you can click the buttons to show you the data used and then the buc iceberg cube. 
 
 # Algorithms
 

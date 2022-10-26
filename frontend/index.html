@@ -33,14 +33,14 @@
         xhr = getXmlHttpRequestObject();
         xhr.onreadystatechange = dataCallback;
         // asynchronous requests
-        xhr.open("GET", "http://127.0.0.1:5000/data", true);
+        xhr.open("GET", "http://localhost:6969/data", true);
         // Ssend the request over the network
         xhr.send(null);
     }
     async function getBucResults() { 
         xhr = getXmlHttpRequestObject(); 
         xhr.onreadystatechange = dataCallback; 
-        await xhr.open("GET", "http://127.0.0.1:5000/buc", true)
+        await xhr.open("GET", "http://localhost:6969/buc", true)
         xhr.send(null)
     }
     function getDate() {
