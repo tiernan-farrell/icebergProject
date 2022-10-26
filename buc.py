@@ -1,12 +1,23 @@
 
 from numpy import partition
-
+import time
+from flask import Flask
+from flask_cors import CORS
 
 NUM_DIMS = 5
 CARDINALITY = [7 for i in range(NUM_DIMS)]
 MINSUP = 2
 
+outList = []
 dataCount = []
+
+app = Flask(__name__)
+CORS(app)
+
+@app.route("/")
+def hello(): 
+    return "Hello, world"
+
 
 def initDataCount():
     for i in range(NUM_DIMS): 
@@ -25,9 +36,8 @@ def bucPartition(input: list, d: int, C: int):
     for i in range(len(input)):
         dataCount[d][input[i][d]] += 1
 
-    
 def buc(input: list, dim: int, prettyPrintLocation: list):
-    print(prettyPrintLocation, ': ', len(input))
+    outList.append(str(prettyPrintLocation) + ': ' + str(len(input)))
     for i in range(dim, NUM_DIMS):
         C = CARDINALITY[i]
         table = sortTupleList(input, i)
@@ -65,12 +75,25 @@ def processData(filename):
         tupleVal = []
     return list 
         
+@app.route('/data', methods=["GET"])
+def data():
+    print('This is the data endpoint')
+    with open('data.txt', 'r') as d: 
+        return d.readlines()
+
+@app.route('/buc', methods=["GET"])   
+def runBuc():
+    data = processData('data.txt') 
+    initDataCount()
+    start = time.time()
+    buc(data, 0, ['*' for i in range(NUM_DIMS)])
+    end = time.time()
+    print(outList)
+    print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start)
+    return outList
 
 def main():
-    data = processData('data.txt')
-    initDataCount()
-
-    buc(data, 0, ['*' for i in range(NUM_DIMS)])
+    runBuc()
     return 0
 
 
