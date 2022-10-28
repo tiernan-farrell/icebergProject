@@ -30,6 +30,9 @@ def initDataCount():
 
 def generateDataCount(input: list): 
     dc = []
+    if len(input) >= MINSUP:
+        first = str(['*' for i in range(NUM_DIMS)]) + ': ' + str(len(input))
+        outList.append(first)
     for i in range(NUM_DIMS): 
         dc.append([0 for i in range(CARDINALITY[i])])
     # This is first pass loop over input table one time 
@@ -93,7 +96,6 @@ def getCandidateCombs(combs: list):
 def getCombs(candCombs: dict, input:list, currLocation: int):
     #Get counts for cand Combinations dictionary 
     numStars = NUM_DIMS - currLocation - 1
-    print(numStars)
     for row in input: 
         subsets = getSubsets(row,numStars)
         for subset in subsets: 
@@ -104,7 +106,13 @@ def getCombs(candCombs: dict, input:list, currLocation: int):
     combs = []
     for comb in candCombs: 
         if candCombs[comb] >= MINSUP:
-            combs.append(comb)
+            c = comb
+            c = c.strip('[')
+            c = c.strip(']')
+            c = c.replace(",", "")
+            c = c.replace("'", "")
+            c = c.replace(" ", "")
+            combs.append(list(c))
             s = comb + ': ' + str(candCombs[comb])
             outList.append(s)
     return combs
@@ -159,6 +167,9 @@ def apriori(input: list):
     candCombs = getCandidateCombs(combs)
     count = 1
     while (len(candCombs) > 0 and count <= NUM_DIMS):
+        print('Count: ', count)
+        print('combs: ', combs)
+        print('cand combs: ', candCombs)
         combs = getCombs(candCombs, input, count)
         candCombs = getCandidateCombs(combs)
         count +=1
@@ -220,7 +231,7 @@ def main():
     data = processData('data.txt') 
     
     apriori(data)
-    print(outList)
+    print(len(outList))
     return 0
 
 

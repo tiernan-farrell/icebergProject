@@ -40,7 +40,6 @@ def getSubsets(row: tuple, numStars: int):
                         starIdxs[k] = starIdxs[k-1]+1
                     break
                 j-=1
-    
     s = ['*' for i in range(len(row))]
     for idx, val in enumerate(row):
         if idx not in starIdxs:
@@ -100,16 +99,20 @@ def main():
     # print(res.fetchone())
     # print(getSubsets((0, 1, 2, 3, 4), 2))
     
-    print(getCandidateCombs([ ['1','*', '*'], 
-                        ['6','*', '*'],
-                        ['*','2', '*'],
-                        ['*','4', '*'],
-                        ['*','*', '0'],
-                        ['*','*', '6']]))
+    # print(getCandidateCombs( ["['0', '1', '*', '*', '*']", "['0', '*', '2', '*', '*']", "['0', '*', '*', '3', '*']", "['0', '*', '*', '*', '4']", "['*', '1', '2', '*', '*']", "['*', '1', '*', '3', '*']", "['*', '1', '*', '*', '4']", "['*', '*', '2', '3', '*']", "['*', '*', '2', '*', '4']", "['*', '*', '*', '3', '4']"]))
     
-    print(getCandidateCombs([ ['1', '4', '*'], 
-                        ['6', '*', '6'],
-                        ['*', '4', '6']]))
-    
+    # print(getCandidateCombs([ ['1', '4', '*'], 
+    #                     ['6', '*', '6'],
+    #                     ['*', '4', '6']]))
+
+    l = "['*', '1', '*']"
+    l =l.strip('[')
+    l = l.strip(']')
+    l = l.replace(",", "")
+    l = l.replace("'", "")
+    l = l.replace(" ", "")
+    print(l)
+    print(list(l))
+        
 if __name__ == "__main__":
     main()

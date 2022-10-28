@@ -88,7 +88,7 @@ def runBuc():
     start = time.time()
     buc(data, 0, ['*' for i in range(NUM_DIMS)])
     end = time.time()
-    print(outList)
+    print(len(outList))
     print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start)
     return outList
 
