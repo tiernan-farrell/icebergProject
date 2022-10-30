@@ -92,11 +92,5 @@ def runBuc():
     print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start)
     return outList
 
-def main():
-    runBuc()
-    return 0
-
-
 if __name__ == "__main__": 
-    main()
-    # app.run("localhost", 6969)
+    app.run("localhost", 6969)
