@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 NUM_DIMS = 5
 CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 2
+MINSUP = 1
 
 outList = []
 dataCount = []
@@ -88,7 +88,7 @@ def runBuc():
     start = time.time()
     buc(data, 0, ['*' for i in range(NUM_DIMS)])
     end = time.time()
-    print(outList)
+    print(len(outList))
     print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start)
     return outList
 
@@ -98,4 +98,5 @@ def main():
 
 
 if __name__ == "__main__": 
-    app.run("localhost", 6969)
+    main()
+    # app.run("localhost", 6969)
