@@ -9,6 +9,7 @@
     <button onclick="getBucResults()">Get buc iceberg cube</button>
     <button onclick="getAprioriResults()">Get apriori iceberg cube</button>
     <button onclick="getTdcResults()">Get Top Down Computation iceberg cube</button>
+    <button onclick="getStar_CubeResults()">Get Star-Cube </button>
     <div id="result-container"></div>
 </body>
 <script>
@@ -52,6 +53,12 @@
         xhr.send(null)
     }
     async function getTdcResults() { 
+        xhr = getXmlHttpRequestObject(); 
+        xhr.onreadystatechange = dataCallback; 
+        await xhr.open("GET", "http://localhost:6969/tdc", true)
+        xhr.send(null)
+    }
+    async function getStar_CubeResults() { 
         xhr = getXmlHttpRequestObject(); 
         xhr.onreadystatechange = dataCallback; 
         await xhr.open("GET", "http://localhost:6969/tdc", true)
