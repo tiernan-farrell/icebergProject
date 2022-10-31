@@ -1,3 +1,4 @@
+from tdc import TDC
 from apriori import Apriori
 from buc import BUC
 from numpy import partition
@@ -5,7 +6,7 @@ import time
 from flask import Flask
 from flask_cors import CORS
 
-NUM_DIMS = 3
+NUM_DIMS = 4
 CARDINALITY = [7 for i in range(NUM_DIMS)]
 MINSUP = 1
 
@@ -15,7 +16,7 @@ dataCount = []
 app = Flask(__name__)
 CORS(app)      
 
-        
+            
 def processData(filename): 
     file = open(filename)
     list = []
@@ -63,6 +64,17 @@ def runApriori():
     end = time.time()
     print('Tuples in datase: ', len(data), '\nTotal apriori() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
     return apriori.getResults()
+
+@app.route('/tdc', methods=["GET"])   
+def runTdc():
+    data = processData('data.txt') 
+    start = time.time()
+    tdc = TDC(CARDINALITY, NUM_DIMS, MINSUP)
+    tdc.tdc(data, [i for i in range(NUM_DIMS)])
+    end = time.time()
+    print('Tuples in datase: ', len(data), '\nTotal Top Down Computation() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
+    return tdc.getResults()
+
 
 
 if __name__ == "__main__": 
