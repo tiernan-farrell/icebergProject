@@ -1,3 +1,4 @@
+from starCube import starCube
 from tdc import TDC
 from apriori import Apriori
 from buc import BUC
@@ -75,6 +76,14 @@ def runTdc():
     print('Tuples in datase: ', len(data), '\nTotal Top Down Computation() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
     return tdc.getResults()
 
+@app.route('/starCube', methods=["GET"])   
+def runStarCube():
+    start = time.time()
+    star = starCube("data.csv", MINSUP)
+    res = star.getResults()
+    end = time.time()
+    print('\nTotal star cubing() time: ', end-start)
+    return res
 
 
 if __name__ == "__main__": 
