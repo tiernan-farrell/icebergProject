@@ -104,7 +104,12 @@ BUC climbs the lattice recursively then decends downward. Notice all of dimensio
   
 
 ## Top-Down Computation
-
+- Top Down Computation computes the iceberg cube in top down fashion of the lattice. 
+If there are 4 dimensions ABCD, TDC loops over the input first counting combinations of 
+ABCD, ABC, AB and A. Then it continues looping checking regions in the order: ABD, ACD, AC, BCD, BC, B, CD, CD, C, D, ALL. 
+- With n dimensions there are `2^n-1` combinations and TDC makes as many passes over the input. 
+- Pruning can happen if no attribute value combinations are found frequent.
+- Traverses lattice the opposite of BUC with the same recursive and iterative structure. 
 ## APRIORI
 
 ## H-Cubing
