@@ -1,3 +1,4 @@
+from crypt import methods
 from starCube import starCube
 from tdc import TDC
 from apriori import Apriori
@@ -7,9 +8,9 @@ import time
 from flask import Flask
 from flask_cors import CORS
 
-NUM_DIMS = 4
+NUM_DIMS = 5
 CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 1
+MINSUP = 100
 
 outList = []
 dataCount = []
@@ -85,6 +86,23 @@ def runStarCube():
     print('\nTotal star cubing() time: ', end-start)
     return res
 
+@app.route('/getComputationTimes', methods=["GET"])
+def getTimes(): 
+    times = {}
+    s1 = time.time()
+    runBuc()
+    s2 = time.time()
+    times['buc'] = s2-s1
+    s11 = time.time()
+    runApriori()
+    s22 = time.time()
+    times['apriori'] = s22-s11
+    s111 = time.time()
+    runTdc()
+    s222 = time.time()
+    times['TopDown'] = s222-s111
+    return times
+    
 
 if __name__ == "__main__": 
     app.run("localhost", 6969)

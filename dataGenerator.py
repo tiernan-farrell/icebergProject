@@ -11,10 +11,10 @@ import random
 def main(): 
     #create data of 10000 tuples of length 5 with int values for each entry that are randomly chosen from 0-9
     
-    for i in range (7): 
+    for i in range (100000): 
         listVal = []
         random.seed(i)
-        for j in range(3):
+        for j in range(5):
             listVal.insert(j, random.randint(0, 6))
         print(listVal)
     

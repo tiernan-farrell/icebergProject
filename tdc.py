@@ -56,10 +56,11 @@ class TDC:
                 end -= 1
         return newList
         
-    
+        
     def tdc(self, input: list, dimensionList: list):
         sortedInput = sorted(input, key=lambda x: tuple([x[dimensionList[i]]] for i in range(len(dimensionList))))
         d = {}
+        prune = {}
         # Loop through input sorted on dimension order and insert counts into cube
         for row in sortedInput: 
             for i in range(len(dimensionList)):
@@ -72,9 +73,12 @@ class TDC:
                 else: 
                     d[starredKey] = 1 
         for key in d: 
-            if key not in self.cube and d[key] >= self.minsup:
-                self.cube[key] = d[key]
-        
+            if key not in self.cube:
+                if d[key] >= self.minsup:
+                    self.cube[key] = d[key]
+                else: 
+                    #prune input 
+                    pass 
         # Recursive calls happen dimension list is not empty 
         if len(dimensionList) > 1:
             # if dimension list needs to be trimmed
