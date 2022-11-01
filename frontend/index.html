@@ -5,11 +5,11 @@
 <body>
     <div>This is simple test to get data from a backend</div>
     <div><span>Last update: </span><span id="time-container"></span></div>
-    <button onclick="getUsers()">Get user data</button>
+    <button onclick="getData()">Get data</button>
     <button onclick="getBucResults()">Get buc iceberg cube</button>
     <button onclick="getAprioriResults()">Get apriori iceberg cube</button>
     <button onclick="getTdcResults()">Get Top Down Computation iceberg cube</button>
-    <button onclick="getStar_CubeResults()">Get Star-Cube </button>
+    <button onclick="getStarCubeResults()">Get Star-Cube </button>
     <div id="result-container"></div>
 </body>
 <script>
@@ -31,8 +31,8 @@
             dataDiv.innerHTML = xhr.responseText;
         }
     }
-    function getUsers() {
-        console.log("Get users...");
+    function getData() {
+        console.log("Get data...");
         xhr = getXmlHttpRequestObject();
         xhr.onreadystatechange = dataCallback;
         // asynchronous requests
@@ -41,27 +41,31 @@
         xhr.send(null);
     }
     async function getBucResults() { 
+        console.log("Get Buc...");
         xhr = getXmlHttpRequestObject(); 
         xhr.onreadystatechange = dataCallback; 
         await xhr.open("GET", "http://localhost:6969/buc", true)
         xhr.send(null)
     }
     async function getAprioriResults() { 
+        console.log("Get Apriori...");
         xhr = getXmlHttpRequestObject(); 
         xhr.onreadystatechange = dataCallback; 
         await xhr.open("GET", "http://localhost:6969/apriori", true)
         xhr.send(null)
     }
     async function getTdcResults() { 
+        console.log("Get Top Down Computation...");
         xhr = getXmlHttpRequestObject(); 
         xhr.onreadystatechange = dataCallback; 
         await xhr.open("GET", "http://localhost:6969/tdc", true)
         xhr.send(null)
     }
-    async function getStar_CubeResults() { 
+    async function getStarCubeResults() { 
+        console.log("Get star Cube...");
         xhr = getXmlHttpRequestObject(); 
         xhr.onreadystatechange = dataCallback; 
-        await xhr.open("GET", "http://localhost:6969/tdc", true)
+        await xhr.open("GET", "http://localhost:6969/starCube", true)
         xhr.send(null)
     }
     function getDate() {
