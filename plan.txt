@@ -1,0 +1,49 @@
+Frontend:
+    - Figure out a layout 
+    - Figure out sending different inputs to python script to run with different data sets and different algorithms
+    - Allow for user input to change configs 
+    - Style 
+    - Displaying the data on a static page with information about the runs etc 
+
+Backend: 
+    - Normalize data return types : buc return "['*', '*', '*', '*', '*']: 100000","[0, '*', '*', '*', '*']: 14359
+                                    tdc return "(0, '*', '*', '*', '*'): 14359","(0, 0, '*', '*', '*'): 2025" - Tiernan and Aaron
+                                    apriori returns ['0', '*', '*', '*', '*']: 14359" - Jack 
+                                    fix star cube to return list of strings like others 
+        We want to have return be a list of strings of stars for aggregates and actual data types for real values:
+            0 instead of '0'
+
+    - Find a test data set (sqlite) with different types of data, different cardinality across dimensions
+    - Normalizing the processing of the data from the dataset before algorithms are called. 
+    - Expand data sets: We want to find data sets with varying sizes, dimensions, cardinality, etc to actually test algorithms 
+    - Testing data sets and algorithms in the cloud and generating data
+
+Whole Team: 
+    - Deploying and testing code on different configurations with linode
+    - What are the metrics we are using to analyze the performance 
+        - Time 
+        - Memory usage, cpu usage, nodes pruned
+    - update README
+    - Mid november progress report 
+    - Final paper
+    - Final video
+
+
+For next wednesday 11/9: 
+
+    Backend: 
+    - Normalize data return types : buc return ['*', '*', '*', '*', '*']: 100000","[0, '*', '*', '*', '*']: 14359
+                                    tdc return "(0, '*', '*', '*', '*'): 14359","(0, 0, '*', '*', '*'): 2025"
+                                    apriori returns ['0', '*', '*', '*', '*']: 14359"
+        We want to have return be a list of strings of stars for aggregates and actual data types for real values:
+            0 instead of '0'
+
+    - Find a test data set (sqlite) with different types of data, different cardinality across dimensions
+    - Normalizing the processing of the data from the dataset before algorithms are called. 
+
+    Frontend: 
+        - Figure out a layout 
+        - Figure out sending different inputs to python script to run with different data sets and different algorithms
+
+11/16: 
+    Goal: Fully functional frontend with user inputs and static results page
