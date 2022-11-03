@@ -1,4 +1,4 @@
-from crypt import methods
+#from crypt import methods
 from starCube import starCube
 from tdc import TDC
 from apriori import Apriori
@@ -8,9 +8,9 @@ import time
 from flask import Flask
 from flask_cors import CORS
 
-NUM_DIMS = 5
+NUM_DIMS = 4
 CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 100
+MINSUP = 2
 
 outList = []
 dataCount = []
@@ -43,12 +43,12 @@ def processData(filename):
 @app.route('/data', methods=["GET"])
 def data():
     print('This is the data endpoint')
-    with open('data.txt', 'r') as d: 
+    with open('testData.txt', 'r') as d: 
         return d.readlines()
 
 @app.route('/buc', methods=["GET"])   
 def runBuc():
-    data = processData('data.txt') 
+    data = processData('testData.txt') 
     start = time.time()
     buc = BUC(CARDINALITY, NUM_DIMS, MINSUP)
     buc.buc(data, 0, ['*' for i in range(NUM_DIMS)])
@@ -59,7 +59,7 @@ def runBuc():
 
 @app.route('/apriori', methods=["GET"])   
 def runApriori():
-    data = processData('data.txt') 
+    data = processData('testData.txt') 
     start = time.time()
     apriori = Apriori(CARDINALITY, NUM_DIMS, MINSUP)
     apriori.apriori(data)
@@ -69,7 +69,7 @@ def runApriori():
 
 @app.route('/tdc', methods=["GET"])   
 def runTdc():
-    data = processData('data.txt') 
+    data = processData('testData.txt') 
     start = time.time()
     tdc = TDC(CARDINALITY, NUM_DIMS, MINSUP)
     tdc.tdc(data, [i for i in range(NUM_DIMS)])
