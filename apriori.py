@@ -25,7 +25,8 @@ class Apriori:
             for i, val in enumerate(row):
                 if (val >= self.minsup):
                     stringRep1 = stringRep
-                    stringRep1[idx] = str(i)
+                    #Was str(i)
+                    stringRep1[idx] = i
                     combs.append(stringRep1.copy())
                     s = str(stringRep1) + ': ' + str(val)
                     self.outList.append(s)
@@ -43,8 +44,12 @@ class Apriori:
             for i in range(j, len(combs)): 
                 cand = ['*' for i in range(self.dims)]
                 next = combs[i]
+                print("row = ", row)
+                print("next = ", next)
                 flag = True
                 for d in range(self.dims):
+                    print("row[", d, "] = ", row[d])
+                    print("next[", d,"] = ", next[d])
                     #If values between the two at dim d are not equal and neither are starts
                     if row[d] != next[d] and row[d] != '*' and next[d] != '*':
                         flag = False
@@ -61,7 +66,10 @@ class Apriori:
                     #Else they are the same value
                     else: 
                         cand[d] = row[d]
-                if flag: 
+                    print("Cand[",d,"] = ", cand)
+                print("Flag = ", flag)
+                if flag and (cand not in candCombs): 
+                    print("APPENDED CAND = ", cand)
                     candCombs.append(cand)
                     
 
@@ -81,14 +89,21 @@ class Apriori:
         #Filter based on self.minsup
         combs = []
         for comb in candCombs: 
-            if candCombs[comb] >= self.minsup:
+            if (candCombs[comb] >= self.minsup):
                 c = comb
                 c = c.strip('[')
                 c = c.strip(']')
                 c = c.replace(",", "")
                 c = c.replace("'", "")
                 c = c.replace(" ", "")
-                combs.append(list(c))
+                cList=[]
+                for val in c:
+                    if val == '*':
+                        cList.append('*')
+                    else:
+                        cList.append(int(val))
+                if (cList not in combs):
+                    combs.append(cList)
                 s = comb + ': ' + str(candCombs[comb])
                 self.outList.append(s)
         return combs
@@ -111,7 +126,7 @@ class Apriori:
             s = ['*' for i in range(len(row))]
             for idx, val in enumerate(row):
                 if idx not in starIdxs:
-                    s[idx] = str(val)
+                    s[idx] = val
             subSet.append(s)
             if starIdxs[-1] < len(row)-1: 
                 starIdxs[-1] = starIdxs[-1] + 1        
@@ -128,7 +143,7 @@ class Apriori:
         s = ['*' for i in range(len(row))]
         for idx, val in enumerate(row):
             if idx not in starIdxs:
-                s[idx] = str(val)
+                s[idx] = val
         if s not in subSet:
             subSet.append(s)
         return subSet
@@ -142,6 +157,9 @@ class Apriori:
             combs = self.getCombs(candCombs, input, count)
             candCombs = self.getCandidateCombs(combs)
             count +=1
+            print(count)
+            print("dims = ", self.dims)
+            print("len(candCombs) = ", len(candCombs))
         return
     
     def getResults(self):
