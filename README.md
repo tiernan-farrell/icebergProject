@@ -114,7 +114,8 @@ ABCD, ABC, AB and A. Then it continues looping checking regions in the order: AB
 - Apriori functions utilize candidate combinations in order to prune useless attribute value combinations.  It follows the Apriori Property which states “All non-empty subsets of a frequent itemset must be frequent”.  Therefore, for a combination of attribute values to satisfy the minimum support requirement, all subsets of that combination must also satisfy minimum support.  Apriori uses this property by only allowing candidate combinations that are combinations of frequent attribute value combinations.  Apriori starts looking at one value on the first pass of the data, then considers all candidate combinations of the frequent single values and looks at the two value combinations on the second pass of the data.  The data is continually passed until either all combinations are pruned or the number of values in the candidate combinations after being passed through is equal the original dimensionality of the data.
 - This can best be seen with the example below:
 <img width="900" alt="image" src="images\Apriori.png">
-- 
+- Supposing the input table 4, on the first pass of data, Apriori determines that single values in Table 5 are frequent.  Table 6 shows the candidate combinations that result from the combinations in Table 5.  The candidate combinations are then passed through, resulting in the cominbations and counts seen in Table 7.  3-set candidates are then generated for the candidate combinations as seen in Table 8, and then passed through resulting in Table 9.  Since {a2, c2, d2} is not frequent no more candidate combinations can be derived, so the algorithm finishes executing.
+
 ## H-Cubing
 
 ## Star-Cubing
