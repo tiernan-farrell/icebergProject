@@ -1,3 +1,32 @@
+import time
+
+
+NUM_DIMS = 5
+CARDINALITY = [7 for i in range(NUM_DIMS)]
+MINSUP = 20
+            
+def processData(filename): 
+    file = open(filename)
+    list = []
+    tupleVal = []
+    i = 0
+    for t in file: 
+        t = t.replace(']', '')
+        t = t.replace('[', '')
+        t = t.replace('\n', '')
+        split = t.split(', ')
+        j = 0
+        for num in split: 
+            tupleVal.insert(j, int(num))
+            j += 1
+        j = 0
+        i += 1
+        tup = tuple(tupleVal)
+        list.insert(i,tup)  
+        tupleVal = []
+    return list 
+
+
 class Apriori: 
     
     def __init__(self, card, dims, minsup): 
@@ -35,21 +64,26 @@ class Apriori:
 
 
     def getCandidateCombs(self, combs: list):
+        # print(combs)
         if (len(combs) < 2):
             return {}
         rval = {}
         candCombs = []
+        sc = -1
+        for i in range(len(combs[0])):
+            if combs[0][i] == '*': 
+                sc += 1
         for indx, row in enumerate(combs):
             j = indx + 1 
             for i in range(j, len(combs)): 
                 cand = ['*' for i in range(self.dims)]
                 next = combs[i]
-                print("row = ", row)
-                print("next = ", next)
+                # print("row = ", row)
+                # print("next = ", next)
                 flag = True
+                starCount = len(cand)
+                # Build candidate combination by iterating over dimensions
                 for d in range(self.dims):
-                    print("row[", d, "] = ", row[d])
-                    print("next[", d,"] = ", next[d])
                     #If values between the two at dim d are not equal and neither are starts
                     if row[d] != next[d] and row[d] != '*' and next[d] != '*':
                         flag = False
@@ -61,15 +95,20 @@ class Apriori:
                     elif row[d] == '*' or next[d] == '*':
                         if row[d] == '*':
                             cand[d] = next[d]
+                            starCount -= 1
                         else: 
                             cand[d] = row[d]
+                            starCount -= 1
                     #Else they are the same value
                     else: 
                         cand[d] = row[d]
-                    print("Cand[",d,"] = ", cand)
-                print("Flag = ", flag)
-                if flag and (cand not in candCombs): 
-                    print("APPENDED CAND = ", cand)
+                        starCount -= 1 
+                    if starCount < sc:
+                        flag = False
+                        break
+                # print(cand)
+                if flag and cand not in candCombs and starCount == sc: 
+                    # print("APPENDED CAND = ", cand)
                     candCombs.append(cand)
                     
 
@@ -155,12 +194,27 @@ class Apriori:
         count = 1
         while (len(candCombs) > 0 and count <= self.dims):
             combs = self.getCombs(candCombs, input, count)
+            s = time.perf_counter()
             candCombs = self.getCandidateCombs(combs)
+            e = time.perf_counter()
             count +=1
-            print(count)
-            print("dims = ", self.dims)
-            print("len(candCombs) = ", len(candCombs))
+            print('Cand Combs: ', candCombs)
+            print('Cand Combs time: ', e-s)
         return
     
     def getResults(self):
         return self.outList
+    
+def main(): 
+    
+    data = processData('data.txt') 
+    start = time.time()
+    apriori = Apriori(CARDINALITY, NUM_DIMS, MINSUP)
+    apriori.apriori(data)
+    end = time.time()
+    print('Tuples in datase: ', len(data), '\nTotal apriori() time: ', end-start, '\nTotal iceberg cube size: ', len(apriori.outList))
+    apriori.getResults()
+
+
+if __name__ == '__main__':
+    main()

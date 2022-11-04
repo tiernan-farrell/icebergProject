@@ -1,3 +1,31 @@
+import time
+
+
+NUM_DIMS = 5
+CARDINALITY = [7 for i in range(NUM_DIMS)]
+MINSUP = 20
+            
+def processData(filename): 
+    file = open(filename)
+    list = []
+    tupleVal = []
+    i = 0
+    for t in file: 
+        t = t.replace(']', '')
+        t = t.replace('[', '')
+        t = t.replace('\n', '')
+        split = t.split(', ')
+        j = 0
+        for num in split: 
+            tupleVal.insert(j, int(num))
+            j += 1
+        j = 0
+        i += 1
+        tup = tuple(tupleVal)
+        list.insert(i,tup)  
+        tupleVal = []
+    return list 
+
 
 class BUC:
     def __init__(self, card, dims, minsup): 
@@ -37,3 +65,19 @@ class BUC:
     
     def getResults(self):
         return self.outList
+    
+    
+        
+def main(): 
+    
+    data = processData('data.txt') 
+    start = time.time()
+    b = BUC(CARDINALITY, NUM_DIMS, MINSUP)    
+    b.buc(data, 0, ['*' for i in range(NUM_DIMS)])
+    end = time.time()
+    print('Tuples in datase: ', len(data), '\nTotal apriori() time: ', end-start, '\nTotal iceberg cube size: ', len(b.outList))
+    b.getResults()
+
+
+if __name__ == '__main__':
+    main()
