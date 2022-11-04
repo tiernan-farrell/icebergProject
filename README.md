@@ -63,11 +63,11 @@ Use:
 in the directory of the main project to start the python backend server 
 
 To start the frontend server, use: 
-    ```$npm install --global http-server
-       $http-server``` 
+    `$cd react-frontend` 
+    `$npm start`
 
 in the /frontend directory. Navigate to the server that was started at 
-    `http://127.0.0.1:8080`
+    `http://localhost:3000`
 From here you can click the buttons to show you the data used and then the buc iceberg cube. 
 
 # Algorithms

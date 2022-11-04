@@ -48,7 +48,7 @@ class Apriori:
                 print("next = ", next)
                 flag = True
                 for d in range(self.dims):
-                    print("row[", d, "] = ", row[d])
+                    print("row[", d, "] = ", row[d]) 
                     print("next[", d,"] = ", next[d])
                     #If values between the two at dim d are not equal and neither are starts
                     if row[d] != next[d] and row[d] != '*' and next[d] != '*':
