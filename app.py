@@ -1,8 +1,8 @@
 #from crypt import methods
-from starCube import starCube
-from tdc import TDC
-from apriori import Apriori
-from buc import BUC
+from Algorithms.starCube import starCube
+from Algorithms.tdc import TDC
+from Algorithms.apriori import Apriori
+from Algorithms.buc import BUC
 from numpy import partition
 import time
 from flask import Flask
