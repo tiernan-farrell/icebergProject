@@ -8,16 +8,16 @@ import time
 from flask import Flask
 from flask_cors import CORS
 
-NUM_DIMS = 4
+NUM_DIMS = 5
 CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 2
+MINSUP = 10000
 
 outList = []
 dataCount = []
 
 app = Flask(__name__)
 CORS(app)      
-
+times = {}
             
 def processData(filename): 
     file = open(filename)
@@ -43,64 +43,69 @@ def processData(filename):
 @app.route('/data', methods=["GET"])
 def data():
     print('This is the data endpoint')
-    with open('testData.txt', 'r') as d: 
+    with open('data/data.txt', 'r') as d: 
         return d.readlines()
 
 @app.route('/buc', methods=["GET"])   
 def runBuc():
-    data = processData('testData.txt') 
-    start = time.time()
+    data = processData('data/data.txt') 
+    start = time.perf_counter()
     buc = BUC(CARDINALITY, NUM_DIMS, MINSUP)
     buc.buc(data, 0, ['*' for i in range(NUM_DIMS)])
-    end = time.time()
+    end = time.perf_counter()
+    times['buc'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
     return buc.getResults()
 
 
 @app.route('/apriori', methods=["GET"])   
 def runApriori():
-    data = processData('testData.txt') 
-    start = time.time()
+    data = processData('data/data.txt') 
+    start = time.perf_counter()
     apriori = Apriori(CARDINALITY, NUM_DIMS, MINSUP)
     apriori.apriori(data)
-    end = time.time()
+    end = time.perf_counter()
+    times['apriori'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal apriori() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
     return apriori.getResults()
 
 @app.route('/tdc', methods=["GET"])   
 def runTdc():
-    data = processData('testData.txt') 
-    start = time.time()
+    data = processData('data/data.txt') 
+    start = time.perf_counter()
     tdc = TDC(CARDINALITY, NUM_DIMS, MINSUP)
     tdc.tdc(data, [i for i in range(NUM_DIMS)])
-    end = time.time()
+    end = time.perf_counter()
+    times['tdc'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal Top Down Computation() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
     return tdc.getResults()
 
 @app.route('/starCube', methods=["GET"])   
 def runStarCube():
-    start = time.time()
+    start = time.perf_counter()
     star = starCube("data.csv", MINSUP)
     res = star.getResults()
-    end = time.time()
+    end = time.perf_counter()
     print('\nTotal star cubing() time: ', end-start)
     return res
 
 @app.route('/getComputationTimes', methods=["GET"])
 def getTimes(): 
-    times = {}
-    s1 = time.time()
-    runBuc()
-    s2 = time.time()
-    times['buc'] = s2-s1
-    s11 = time.time()
-    runApriori()
-    s22 = time.time()
-    times['apriori'] = s22-s11
-    s111 = time.time()
-    runTdc()
-    s222 = time.time()
-    times['TopDown'] = s222-s111
+    if 'buc' not in times: 
+        sbuc = time.perf_counter()
+        runBuc()
+        ebuc = time.perf_counter()
+        times['buc'] = ebuc - sbuc
+    if 'tdc' not in times: 
+        stdc = time.perf_counter()
+        runTdc()
+        etdc = time.perf_counter()
+        times['tdc'] = etdc - stdc
+    if 'apriori' not in times: 
+        sap = time.perf_counter()
+        runBuc()
+        eap = time.perf_counter()
+        times['apriori'] = eap - sap
     return times
     
 
