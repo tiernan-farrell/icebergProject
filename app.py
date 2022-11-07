@@ -68,9 +68,15 @@ def runBuc():
 
 @app.route('/apriori', methods=["GET"])   
 def runApriori():
+    
+    minsup = request.args.get('minsup', default=1, type = int)
+    numDims = request.args.get('numDims', default=1, type = int)
+    card = request.args.get('card', default=1, type = int)
+
+
     data = processData('data/data.txt') 
     start = time.perf_counter()
-    apriori = Apriori(CARDINALITY, NUM_DIMS, MINSUP)
+    apriori = Apriori([card for i in range(numDims)], numDims, minsup)
     apriori.apriori(data)
     end = time.perf_counter()
     times['apriori'] = end - start
@@ -79,10 +85,15 @@ def runApriori():
 
 @app.route('/tdc', methods=["GET"])   
 def runTdc():
+    
+    minsup = request.args.get('minsup', default=1, type = int)
+    numDims = request.args.get('numDims', default=1, type = int)
+    card = request.args.get('card', default=1, type = int)
+
     data = processData('data/data.txt') 
     start = time.perf_counter()
-    tdc = TDC(CARDINALITY, NUM_DIMS, MINSUP)
-    tdc.tdc(data, [i for i in range(NUM_DIMS)])
+    tdc = TDC([card for i in range(numDims)], numDims, minsup)
+    tdc.tdc(data, [i for i in range(numDims)])
     end = time.perf_counter()
     times['tdc'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal Top Down Computation() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
@@ -90,6 +101,7 @@ def runTdc():
 
 @app.route('/starCube', methods=["GET"])   
 def runStarCube():
+
     start = time.perf_counter()
     star = starCube("data/data.csv", MINSUP)
     res = star.getResults()
@@ -122,7 +134,6 @@ def generateData():
     numDims = request.args.get('numDims', default=1, type = int)
     card = request.args.get('card', default=1, type = int)
     data = []
-    print(numTuples)
     with open('data/data.txt', 'w') as f:
         for i in range (numTuples): 
             print(i)
