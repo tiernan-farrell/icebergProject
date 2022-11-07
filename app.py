@@ -1,11 +1,12 @@
 #from crypt import methods
+import random
 from Algorithms.starCube import starCube
 from Algorithms.tdc import TDC
 from Algorithms.apriori import Apriori
 from Algorithms.buc import BUC
 from numpy import partition
 import time
-from flask import Flask
+from flask import Flask, request
 from flask_cors import CORS
 
 NUM_DIMS = 5
@@ -48,10 +49,17 @@ def data():
 
 @app.route('/buc', methods=["GET"])   
 def runBuc():
+
+    minsup = request.args.get('minsup', default=1, type = int)
+    numDims = request.args.get('numDims', default=1, type = int)
+    card = request.args.get('card', default=1, type = int)
+
+
+    print('\n\nMinsup: ', minsup, '\n\n\n')
     data = processData('data/data.txt') 
     start = time.perf_counter()
-    buc = BUC(CARDINALITY, NUM_DIMS, MINSUP)
-    buc.buc(data, 0, ['*' for i in range(NUM_DIMS)])
+    buc = BUC([card for i in range(numDims)], numDims, minsup)
+    buc.buc(data, 0, ['*' for i in range(numDims)])
     end = time.perf_counter()
     times['buc'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
@@ -83,7 +91,7 @@ def runTdc():
 @app.route('/starCube', methods=["GET"])   
 def runStarCube():
     start = time.perf_counter()
-    star = starCube("data.csv", MINSUP)
+    star = starCube("data/data.csv", MINSUP)
     res = star.getResults()
     end = time.perf_counter()
     print('\nTotal star cubing() time: ', end-start)
@@ -108,6 +116,26 @@ def getTimes():
         times['apriori'] = eap - sap
     return times
     
+@app.route('/generateData', methods=["GET"])
+def generateData():
+    numTuples = request.args.get('numTuples', default=1, type = int)
+    numDims = request.args.get('numDims', default=1, type = int)
+    card = request.args.get('card', default=1, type = int)
+    data = []
+    print(numTuples)
+    with open('data/data.txt', 'w') as f:
+        for i in range (numTuples): 
+            print(i)
+            listVal = []
+            random.seed(i)
+            for j in range(numDims):
+                listVal.insert(j, random.randint(0,card-1))
+            f.write(str(listVal))
+            f.write('\n')
+            data.append(listVal)
+    f.close()        
+    return data
+
 
 if __name__ == "__main__": 
     app.run("localhost", 6969)

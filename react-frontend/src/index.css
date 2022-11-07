@@ -37,7 +37,8 @@ button {
   border-radius: 5px;
   color: black;
   padding: 10px;
-  border: 5px solid black; 
+  border: 5px solid white; 
+  justify-content: center;
 }
 
 #meta-results{ 
@@ -45,4 +46,15 @@ button {
   padding: 10px;
   color: black;
   background-color: lightblue;
+}
+
+#results-table{
+
+  border: 5px solid black;
+
+}
+#submit-button { 
+  background-color: black;
+  color: black;
+  border: none;
 }
