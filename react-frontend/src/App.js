@@ -68,6 +68,7 @@ function App() {
     await xhr.open("GET", url, true)
     xhr.send(null)
   }
+
   async function getTDCResults() { 
     console.log("Get TDC...");
     // eslint-disable-next-line no-undef
@@ -76,7 +77,8 @@ function App() {
     setAlgoResults("Loading")
     const nowstdc = new Date()
     start = nowstdc.getMilliseconds()
-    await xhr.open("GET", "http://localhost:6969/tdc", true)
+    const url = "http://localhost:6969/tdc?minsup=" + minsup + "&numDims=" + numDims + "&card=" + card
+    await xhr.open("GET", url, true)
     xhr.send(null)
 
   }
@@ -89,7 +91,8 @@ function App() {
     setAlgoResults("Loading")
     const nowApriori = new Date()
     start = nowApriori.getMilliseconds()
-    await xhr.open("GET", "http://localhost:6969/apriori", true)
+    const url = "http://localhost:6969/apriori?minsup=" + minsup + "&numDims=" + numDims + "&card=" + card
+    await xhr.open("GET", url, true)
     xhr.send(null)
   }
 
