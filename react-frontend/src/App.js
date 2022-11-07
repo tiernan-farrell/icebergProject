@@ -9,7 +9,7 @@ import Header from './Components/Header';
 import Options from './Components/Options';
 import Results from './Components/Results';
 import Form from './Components/Form';
-import HideCheckbox from './Components/HideCheckbox';
+
 
 
 
