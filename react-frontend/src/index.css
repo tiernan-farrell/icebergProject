@@ -12,7 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-button {
+.mainbuttons {
   background-color:  lightblue;
   border: 5px solid white;
   border-radius: 10%;
@@ -21,6 +21,12 @@ button {
   font-size: 1rem;
   font-weight: 600;
   margin: 1rem;
+  
+}
+button:hover {
+  background-color: grey;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 
@@ -58,3 +64,39 @@ button {
   color: black;
   border: none;
 }
+#form-wrapper { 
+  display: flexbox;
+  flex: auto;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+input{
+  width: auto;
+  height: 2 rem;
+  border: 5px solid lightblue;
+  border-radius: 5px;
+  display: flex;
+}
+input:hover { 
+  cursor: pointer;
+}
+label { 
+  display: flex;
+  font-weight: 400;
+  margin-top: 15px;
+  background-color: black;
+}
+
+form { 
+  margin:auto;
+  align-content: center;
+  width: 10rem;
+}
+#genData{
+  width: 9.95rem;
+}
+

@@ -9,6 +9,7 @@ import Header from './Components/Header';
 import Options from './Components/Options';
 import Results from './Components/Results';
 import Form from './Components/Form';
+import HideCheckbox from './Components/HideCheckbox';
 
 
 
@@ -39,22 +40,34 @@ function App() {
     }
     return xhr;
   };
-  function dataCallback() {
+  function dataCallback(num=0) {
       // Check response is ready or not
       if (xhr.readyState === 4 && xhr.status === 200) {
           console.log("User data received!");
           const now2 = new Date()
-          const end = now2.getMilliseconds()
+          const end = now2.getTime()
           // eslint-disable-next-line no-undef
-          console.log(start)
-          console.log(end)
-          console.log(-start)
-          const t = end-start
-          // setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + t.toString()+ "seconds")
-          setAlgoResults(xhr.responseText)
+
+          let secs = Math.abs(end-start)/1000
+          
+          setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
+           setAlgoResults(xhr.responseText)
           console.log(typeof xhr.responseText)
       }
   }
+  function dataCallbackDataButton() {
+    // Check response is ready or not
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        console.log("User data received!");
+        const now2 = new Date()
+        const end = now2.getTime()
+        // eslint-disable-next-line no-undef
+        let secs = Math.abs(end-start)/1000
+        setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
+        setAlgoResults(xhr.responseText.replaceAll('\\n', ', '))
+
+    }
+}
 
   async function getBucResults() { 
     console.log("Get Buc...");
@@ -63,7 +76,7 @@ function App() {
     xhr.onreadystatechange = dataCallback; 
     setAlgoResults("Loading")
     const nowsBuc = new Date()
-    start = nowsBuc.getMilliseconds()
+    start = nowsBuc.getTime()
     const url = "http://localhost:6969/buc?minsup=" + minsup + "&numDims=" + numDims + "&card=" + card
     await xhr.open("GET", url, true)
     xhr.send(null)
@@ -76,7 +89,7 @@ function App() {
     xhr.onreadystatechange = dataCallback; 
     setAlgoResults("Loading")
     const nowstdc = new Date()
-    start = nowstdc.getMilliseconds()
+    start = nowstdc.getTime()
     const url = "http://localhost:6969/tdc?minsup=" + minsup + "&numDims=" + numDims + "&card=" + card
     await xhr.open("GET", url, true)
     xhr.send(null)
@@ -87,10 +100,10 @@ function App() {
     console.log("Get Apriori...");
     // eslint-disable-next-line no-undef
     xhr = getXmlHttpRequestObject(); 
-    xhr.onreadystatechange = dataCallback; 
     setAlgoResults("Loading")
+    xhr.onreadystatechange = dataCallback; 
     const nowApriori = new Date()
-    start = nowApriori.getMilliseconds()
+    start = nowApriori.getTime()
     const url = "http://localhost:6969/apriori?minsup=" + minsup + "&numDims=" + numDims + "&card=" + card
     await xhr.open("GET", url, true)
     xhr.send(null)
@@ -103,7 +116,7 @@ function App() {
     xhr.onreadystatechange = dataCallback; 
     setAlgoResults("Loading")
     const nowsstarCube = new Date()
-    start = nowsstarCube.getMilliseconds()
+    start = nowsstarCube.getTime()
     await xhr.open("GET", "http://localhost:6969/starCube", true)
     xhr.send(null)
   }
@@ -116,7 +129,7 @@ function App() {
     xhr.onreadystatechange = dataCallback; 
     setAlgoResults("Loading")
     const nowsgetComputationTimes = new Date()
-    start = nowsgetComputationTimes.getMilliseconds()
+    start = nowsgetComputationTimes.getTime()
     await xhr.open("GET", "http://localhost:6969/getComputationTimes", true)
     xhr.send(null)
   }
@@ -127,10 +140,10 @@ function App() {
     console.log("Generating data");
     // eslint-disable-next-line no-undef
     xhr = getXmlHttpRequestObject(); 
-    xhr.onreadystatechange = dataCallback; 
     setAlgoResults("Loading")
+    xhr.onreadystatechange = dataCallback; 
     const nowGenerateData = new Date()
-    start = nowGenerateData.getMilliseconds()
+    start = nowGenerateData.getTime()
     const s = "?numTuples=" + numTuples + "&numDims=" + numDims + "&card=" + card
     const url = "http://localhost:6969/generateData" + s
     await xhr.open("GET", url, true)
@@ -144,21 +157,18 @@ function App() {
     xhr.onreadystatechange = dataCallback; 
     setAlgoResults("Loading")
     const now = new Date()
-    start = now.getMilliseconds()
+    start = now.getTime()
     await xhr.open("GET", "http://localhost:6969/data", true)
 
     // setMetaResults(metaResults + " | Time: " + edata-sdata)
     xhr.send(null)
   }
 
-  function chanegeStates(newNumTuples, newNumDims, newCard) {
+  function chanegeStates(newNumTuples, newNumDims, newCard, newMinsup) {
     setNumTuples(newNumTuples)
     setNumDims(newNumDims)
     setCard(newCard)
-    console.log(numTuples)
-    console.log(numDims)
-    console.log(card)
-    
+    setMinsup(newMinsup)
   }
 
   return (
@@ -172,8 +182,8 @@ function App() {
       <Button onClick={getAprioriResults}>Apriori</Button>
       <Button onClick={getStarCubeResults}>StarCube</Button>
       <Button onClick={getRunTimes}>RunTimes</Button>
-      <Button onClick={generateData}>genData</Button>
       <Form onSubmit={chanegeStates} />    
+      <Button onClick={generateData} id='genData'>Generate Data</Button>
       <div id='meta-results'>{metaResults}</div>
       <div id='result-container'>
         <Results results={algoResults}/>  
