@@ -81,6 +81,7 @@ def runApriori():
     end = time.perf_counter()
     times['apriori'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal apriori() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
+    apriori.createReadableList()
     return apriori.getResults()
 
 @app.route('/tdc', methods=["GET"])   
