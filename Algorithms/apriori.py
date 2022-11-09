@@ -6,6 +6,7 @@ class Apriori:
         self.minsup = minsup
         self.dc = []
         self.outList = []        
+        self.readableList  = []  
         
     def generateDataCount(self, input: list): 
         if len(input) >= self.minsup:
@@ -162,5 +163,34 @@ class Apriori:
             print("len(candCombs) = ", len(candCombs))
         return
     
+    def createReadableList(self):
+        
+        aprioriCube = self.outList
+        aprioriList = []
+
+        j = 0
+        for line in aprioriCube:
+            i = 0
+            unit = ''
+            aprioriList.append([])
+
+            while i < len(line):
+            
+                if line[i] == '*':
+                    unit = '*'
+                elif (ord(line[i]) > 47 and ord(line[i]) < 58) or (ord(line[i]) > 64 and ord(line[i]) < 91) or (ord(line[i]) > 96 and ord(line[i]) < 123):
+                    unit += line[i]
+                if line[i] == ']' or line[i] == ',' or i == len(line)-1:
+                    try:
+                        aprioriList[j].append(int(unit))
+                    except:
+                        aprioriList[j].append(unit) 
+                    unit = ''
+                i +=1
+            j += 1
+
+        self.readableList = aprioriList
+
     def getResults(self):
-        return self.outList
+        
+        return self.readableList
