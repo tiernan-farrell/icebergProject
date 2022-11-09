@@ -81,8 +81,10 @@ def runTdc():
 def runStarCube():
     start = time.time()
     star = starCube("data.csv", MINSUP)
-    res = star.getResults()
+    star.generateCube()
     end = time.time()
+    res = star.getResults()
+    
     print('\nTotal star cubing() time: ', end-start)
     return res
 
