@@ -55,15 +55,15 @@ function App() {
     console.log(minsup)
   },[minsup])
 
-  // useEffect(()=> { 
-  //   setNumDimsArr((numDimsArr) => {
-  //     numDimsArr = []
-  //     for (let i = 0; i < numDims; i++) { 
-  //       numDimsArr.push(i)
-  //     }
-  //     return numDimsArr
-  //   })
-  // }, [numDims])
+  useEffect(()=> { 
+    setNumDimsArr((numDimsArr) => {
+      numDimsArr = []
+      for (let i = 0; i < numDims; i++) { 
+        numDimsArr.push(i)
+      }
+      return numDimsArr
+    })
+  }, [numDims])
 
   var xhr = null;
   var start = 0
@@ -86,7 +86,7 @@ function App() {
           let secs = Math.abs(end-start)/1000
           
           setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
-          setAlgoResults(xhr.responseText)
+           setAlgoResults(xhr.responseText)
           console.log(typeof xhr.responseText)
       }
   }
@@ -102,32 +102,22 @@ function App() {
         setAlgoResults(xhr.responseText.replaceAll('\\n', ', '))
 
 
-//         const s = xhr.responseText.replaceAll('\\n', ', ').replaceAll('[', '').replaceAll(',', '').replaceAll(']', '')
-//         let i = 0
-//         let j = -1
-//         let a = new Array(new Array(numDims))
-//         console.log(s.length)
-//         console.log(s)
-//         let dim = 0
-//         while(i<s.length) { 
+        const s = xhr.responseText.replaceAll('\\n', ', ').replaceAll('[', '').replaceAll(',', '').replaceAll(']', '')
+        let i = 0
+        let j = -1
+        let a = new Array(new Array(numDims))
+        console.log(s.length)
+        console.log(s)
+        while(i<s.length) { 
+            j === numDims ? j = 0 : j +=1
+            console.log(i + " " + j)
+            console.log(s[i])
 
-//             if (j === numDims){
-//               j = 0
-//               dim+= 1 
-//             } else { 
-//               j +=1
+            a[j]?.push({dim: s[i]})
+            i+=1
+        }
+        console.log(a)
 
-//             } 
-//             console.log('dim: ' + dim)
-//             console.log('j: ' + j)
-//             console.log('a[j]: ' + [j])
-            
-            
-
-//             a[dim].push({i: s[i]})
-//             i+=1
-//         }
-//         console.log(a)
     }
 }
 
@@ -229,16 +219,13 @@ function App() {
   function chanegeStates(newNumTuples, newNumDims, newCard, newMinsup) {
     setNumTuples(newNumTuples)
     setNumDims(newNumDims)
-
     setCard(newCard)
     setMinsup(newMinsup)
     setDisplayData()
-    console.log(numDims)
   }
 
-
+  const dimsContext = React.useContext(numDims)
   return (
-
     <>
     <Header /> 
     <div className="App">
@@ -253,10 +240,7 @@ function App() {
       <Button onClick={generateData} id='genData'>Generate Data</Button>
       <div id='meta-results'>{metaResults}</div>
       <div id='result-container'>
-        {/* <Table d={() => dispatch({type: 'decrement'})} numDims={numDims}/> */}
-        <Table data={displayData} numDims={numDims}/>
-
-        <Results results={algoResults} />
+        <Table d={displayData} numDims={dimsContext}/>
       </div>
     </div>
     </>
