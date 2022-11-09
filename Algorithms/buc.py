@@ -4,7 +4,7 @@ import time
 
 NUM_DIMS = 4
 CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 2
+MINSUP = 1
 
 def processData(filename): 
     file = open(filename)
@@ -49,7 +49,11 @@ class BUC:
             self.dc[d][input[i][d]] += 1
 
     def buc(self, input: list, dim: int, prettyPrintLocation: list):
-        self.outList.append(str(prettyPrintLocation) + ': ' + str(len(input)))
+        #self.outList.append(str(prettyPrintLocation) + ': ' + str(len(input)))
+        outLoc = prettyPrintLocation.copy()
+        outLoc.append(len(input))
+        self.outList.append(outLoc)
+        
         for i in range(dim, self.dims):
             C = self.cardinality[i]
             table = self.sortTupleList(input, i)
@@ -70,12 +74,14 @@ class BUC:
     
 
 def main(): 
-    data = processData('testData.txt') 
+    data = processData('data/testData.txt') 
     start = time.time()
     buc = BUC(CARDINALITY, NUM_DIMS, MINSUP)
     buc.buc(data, 0, ['*' for i in range(NUM_DIMS)])
     end = time.time()
-    print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
+    print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start, '\nTotal iceberg cube size: ', len(buc.outList))
+    for e in buc.getResults():
+        print(str(e))
     return buc.getResults()
 
 if __name__ == '__main__':
