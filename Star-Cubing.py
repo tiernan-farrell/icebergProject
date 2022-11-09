@@ -170,20 +170,58 @@ class StarReduction(object):
             for node in x:
                 subTree = subTree.updateNode(node,0)
 
+def createReadableList(starReduce):
+    
+    starCube = []
+    starCubeList = []
+
+    for node in starReduce.compressed_table:
+        starCube.append(str(node) + ': ' + str(starReduce.compressed_table.get(node)))
+    
+    j = 0
+    for line in starCube:
+         i = 0
+         unit = ''
+         starCubeList.append([])
+
+         while i < len(line):
+            
+            if line[i] == '*':
+                unit = '*'
+            elif (ord(line[i]) > 47 and ord(line[i]) < 58) or (ord(line[i]) > 64 and ord(line[i]) < 91) or (ord(line[i]) > 96 and ord(line[i]) < 123):
+                unit += line[i]
+            if line[i] == ')' or line[i] == ',' or i == len(line)-1:
+                try:
+                    starCubeList[j].append(int(unit))
+
+                except:
+                    starCubeList[j].append(unit) 
+                unit = ''
+            i +=1
+         j += 1
+
+    return starCubeList
+
 class starCube:
 
     def __init__(self, fileName, minSup):
         self.fileName = fileName
         self.minSup = minSup
+        self.starReduce = []
+        self.starTree = None
+        self.starCube = None
 
-    def getResults(self):
+    def generateCube(self):
         count_table, referenceTable = parseInput(self.fileName)
 
         starReduce = StarReduction(self.minSup, referenceTable, count_table)
 
         starReduce.createStarTable()
-        starTree = starReduce.createStarTree()
+        self.starReduce = starReduce
+        self.starTree = starReduce.createStarTree()
 
-        starCube = starCubing(starTree, starTree, self.minSup)
+        self.starCube = starCubing(self.starTree, self.starTree, self.minSup)
 
-        return starCube
+    def getResults(self):
+
+        return createReadableList(self.starReduce)
