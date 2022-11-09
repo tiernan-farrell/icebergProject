@@ -7,20 +7,33 @@ const Form = ({onSubmit}) => {
     const [numDims, setNumDims] = useState(5)
     const [numTuples, setNumTuples] = useState(1000)
 
-  
-  
+
+    
+
     return (
         <>
         <div id="form-wrapper">
             <form>
                 <label for="tuples">Enter # of Tuples</label>
-                <input type="text" id="tuples" placeholder='Enter Number of Tuples' onChange={(e) => setNumTuples(e.target.value)}></input>
-                <label for="tuples">Enter # of Dimensions</label>
-                <input type="text" id="dims" placeholder='Enter Number of Dimensions' onChange={(e) => setNumDims(e.target.value)}></input>
-                <label for="tuples">Enter Cardinality</label>
-                <input type="text" id="card" placeholder='Enter Cardinality' onChange={(e) => setCard(e.target.value)}></input>
+                <input type="text" id="tuples" placeholder='# tuples' onChange={(e) => setNumTuples(e.target.value)}></input>
+                <label for="dims">Enter # of Dimensions</label>
+                <select onChange={(e) => setNumDims(e.target.value)}>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+                <label for="card">Enter Cardinality</label>
+                <input type="text" id="card" placeholder='Cardinality' onChange={(e) => setCard(e.target.value)}></input>
                 <label for="minsup">Enter Minsup</label>
-                <input type="text" id="minsup" placeholder='Enter Minsup' onChange={(e) => setMinsup(e.target.value)}></input>
+                <input type="text" id="minsup" placeholder='Minsup' onChange={(e) => setMinsup(e.target.value)}></input>
                 <input type="submit" id="submit-button" onClick={onSubmit(numTuples, numDims, card, minsup)}></input>
     
             </form>
