@@ -104,6 +104,7 @@ def runStarCube():
 
     start = time.perf_counter()
     star = starCube("data/data.csv", MINSUP)
+    star.generateCube()
     res = star.getResults()
     end = time.perf_counter()
     print('\nTotal star cubing() time: ', end-start)

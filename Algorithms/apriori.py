@@ -39,6 +39,10 @@ class Apriori:
             return {}
         rval = {}
         candCombs = []
+        sc = -1
+        for i in range(len(combs[0])):
+            if combs[0][i] == '*': 
+                sc += 1
         for indx, row in enumerate(combs):
             j = indx + 1 
             for i in range(j, len(combs)): 
@@ -47,6 +51,7 @@ class Apriori:
                 print("row = ", row)
                 print("next = ", next)
                 flag = True
+                starCount = len(cand)
                 for d in range(self.dims):
                     print("row[", d, "] = ", row[d]) 
                     print("next[", d,"] = ", next[d])
@@ -61,15 +66,18 @@ class Apriori:
                     elif row[d] == '*' or next[d] == '*':
                         if row[d] == '*':
                             cand[d] = next[d]
+                            starCount -= 1
                         else: 
                             cand[d] = row[d]
+                            starCount -= 1
                     #Else they are the same value
                     else: 
                         cand[d] = row[d]
-                    print("Cand[",d,"] = ", cand)
-                print("Flag = ", flag)
-                if flag and (cand not in candCombs): 
-                    print("APPENDED CAND = ", cand)
+                    if starCount < sc:
+                        flag = False
+                        break
+
+                if flag and cand not in candCombs and starCount == sc: 
                     candCombs.append(cand)
                     
 
@@ -157,9 +165,6 @@ class Apriori:
             combs = self.getCombs(candCombs, input, count)
             candCombs = self.getCandidateCombs(combs)
             count +=1
-            print(count)
-            print("dims = ", self.dims)
-            print("len(candCombs) = ", len(candCombs))
         return
     
     def getResults(self):
