@@ -175,15 +175,21 @@ class starCube:
     def __init__(self, fileName, minSup):
         self.fileName = fileName
         self.minSup = minSup
+        self.starReduce = []
+        self.starTree = None
+        self.starCube = None
 
-    def getResults(self):
+    def generateCube(self):
         count_table, referenceTable = parseInput(self.fileName)
 
         starReduce = StarReduction(self.minSup, referenceTable, count_table)
 
         starReduce.createStarTable()
-        starTree = starReduce.createStarTree()
+        self.starReduce = starReduce
+        self.starTree = starReduce.createStarTree()
 
-        starCube = starCubing(starTree, starTree, self.minSup)
+        self.starCube = starCubing(self.starTree, self.starTree, self.minSup)
 
-        return starCube
+    def getResults(self):
+
+        return createReadableList(self.starReduce)
