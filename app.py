@@ -45,7 +45,20 @@ def processData(filename):
 def data():
     print('This is the data endpoint')
     with open('data/data.txt', 'r') as d: 
-        return d.readlines()
+        lines = d.readlines()
+    res = []
+    # ['[]\n', '[]\n'] --> ['[]', '[]']
+    # Strip \n in each string in lines
+    print(lines)
+    for line in lines: 
+        intermediate = []
+        line = line.strip('\n').strip('][').split(', ')
+        for num in line: 
+            intermediate.append(int(num))
+        print(line)
+        res.append(intermediate)
+    print(res)
+    return res
 
 @app.route('/buc', methods=["GET"])   
 def runBuc():
@@ -137,7 +150,6 @@ def generateData():
     data = []
     with open('data/data.txt', 'w') as f:
         for i in range (numTuples): 
-            print(i)
             listVal = []
             random.seed(i)
             for j in range(numDims):
