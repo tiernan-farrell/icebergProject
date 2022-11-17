@@ -50,12 +50,13 @@ def data():
     # ['[]\n', '[]\n'] --> ['[]', '[]']
     # Strip \n in each string in lines
     print(lines)
-    for line in lines: 
+    for line in lines:
+        print("line1 ",line) 
         intermediate = []
         line = line.strip('\n').strip('][').split(', ')
         for num in line: 
             intermediate.append(int(num))
-        print(line)
+        print("line2", line)
         res.append(intermediate)
     print(res)
     return res
