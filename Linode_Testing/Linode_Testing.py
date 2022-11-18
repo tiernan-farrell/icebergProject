@@ -52,7 +52,6 @@ while(not algo_Input == '5'):
 
         case '2': #BUC
 
-            print('\n\nMinsup: ', minsup, '\n\n\n')
             data = processData('data/data.txt') 
             start = time.perf_counter()
             buc = BUC([card for i in range(numDims)], numDims, minsup)
@@ -68,8 +67,10 @@ while(not algo_Input == '5'):
                 print('*List printed to file BUC_Results.txt*')
 
         case '3': #Star-Cube
+            
+            data = processData('data/data.txt') 
             start = time.perf_counter()
-            star = starCube("data/data.csv", MINSUP)
+            star = starCube(data, MINSUP)
             star.generateCube()
             end = time.perf_counter()
             time = end - start
