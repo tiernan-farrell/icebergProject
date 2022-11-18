@@ -2,10 +2,10 @@ import React, {useEffect, useReducer, useState} from 'react'
 
 
 import {
-  createColumnHelper,
-  flexRender,
-  getCoreRowModel,
-  useReactTable,
+createColumnHelper,
+flexRender,
+getCoreRowModel,
+useReactTable,
 } from '@tanstack/react-table'
 
 
@@ -16,7 +16,6 @@ const columnHelper = createColumnHelper()
 
 
 const Table = ({data, numDims}) => {
-    console.log('table')
     console.log(numDims)
     let dims = []
     for (let i = 0; i < numDims; i++) { // [ {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ]
@@ -32,6 +31,8 @@ const Table = ({data, numDims}) => {
 
     console.log(dims)
     console.log(columns)
+    console.log(typeof(data))
+
     const table = useReactTable({
         data,
         columns,
@@ -39,7 +40,7 @@ const Table = ({data, numDims}) => {
     })
 
     return (
-        <div className="p-2">
+        <div id="p-2">
         <table>
             <thead>
             {table.getHeaderGroups().map(headerGroup => (

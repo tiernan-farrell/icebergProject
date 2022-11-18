@@ -84,10 +84,10 @@ function App() {
           // eslint-disable-next-line no-undef
 
           let secs = Math.abs(end-start)/1000
-          
+          console.log(typeof(xhr.responseText))
+          console.log(xhr.responseText.split('],'))
           setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
           setAlgoResults(xhr.responseText)
-          console.log(typeof xhr.responseText)
       }
   }
   function dataCallbackGenerateData() {
@@ -99,7 +99,7 @@ function App() {
         // eslint-disable-next-line no-undef
         let secs = Math.abs(end-start)/1000
         setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
-        setAlgoResults(xhr.responseText.replaceAll('\\n', ', '))
+        setAlgoResults(xhr.responseText)
 
 
 //         const s = xhr.responseText.replaceAll('\\n', ', ').replaceAll('[', '').replaceAll(',', '').replaceAll(']', '')
@@ -121,9 +121,6 @@ function App() {
 //             console.log('dim: ' + dim)
 //             console.log('j: ' + j)
 //             console.log('a[j]: ' + [j])
-            
-            
-
 //             a[dim].push({i: s[i]})
 //             i+=1
 //         }
@@ -254,9 +251,14 @@ function App() {
       <div id='meta-results'>{metaResults}</div>
       <div id='result-container'>
         {/* <Table d={() => dispatch({type: 'decrement'})} numDims={numDims}/> */}
-        <Table data={displayData} numDims={numDims}/>
+        {/* {algoResults.replace('[[', '').replace(']]', '').replace('],[', '!').split('!')[0]}
+        {algoResults.replace('[[', '').replace(']]', '').replace('],[', '!').split('!').map((e) => e.split(','))[1]} */}
+        <Table data= {algoResults.replace('[[', '').replace(']]', '').replaceAll('],[', '!').split('!').map((e) => e.split(','))} numDims={numDims}/>
+        {algoResults }
+        {": "}
+        {algoResults.replace('[[', '').replace(']]', '').replaceAll('],[', '!').split('!').map((e) => e.split(','))} 
+        {/* <Table data={[[1,1,0], [0, 0, 1]]} numDims={numDims}/> */}
 
-        <Results results={algoResults} />
       </div>
     </div>
     </>
