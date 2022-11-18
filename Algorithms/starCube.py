@@ -204,15 +204,15 @@ def createReadableList(starReduce):
                 
 class starCube:
 
-    def __init__(self, fileName, minSup):
-        self.fileName = fileName
+    def __init__(self, data, minSup):
+        self.fileName = data
         self.minSup = minSup
         self.starReduce = []
         self.starTree = None
         self.starCube = None
 
     def generateCube(self):
-        count_table, referenceTable = parseInput(self.fileName)
+        count_table, referenceTable = parseInput(self.data)
 
         starReduce = StarReduction(self.minSup, referenceTable, count_table)
 
