@@ -1,11 +1,11 @@
-import React, {useEffect, useReducer, useState} from 'react'
+import React from 'react'
 
 
 import {
-  createColumnHelper,
-  flexRender,
-  getCoreRowModel,
-  useReactTable,
+createColumnHelper,
+flexRender,
+getCoreRowModel,
+useReactTable,
 } from '@tanstack/react-table'
 
 
@@ -16,7 +16,6 @@ const columnHelper = createColumnHelper()
 
 
 const Table = ({data, numDims}) => {
-    console.log('table')
     console.log(numDims)
     let dims = []
     for (let i = 0; i < numDims; i++) { // [ {}, {}, {}, {}, {}, {}, {}, {}, {}, {} ]
@@ -26,12 +25,15 @@ const Table = ({data, numDims}) => {
     const columns = dims.map((dim) => columnHelper.accessor(dim.toString(), {
         cell: info => <i>{info.getValue()}</i>, 
         header: () => <span>{dim}</span>
-    })).concat(columnHelper.accessor('Count', {
-        header: '#',
+    })).concat(columnHelper.accessor(numDims.toString(), {
+        cell: info => <i>{info.getValue()}</i>,
+        header: () => <span>#</span>
     }))
 
     console.log(dims)
     console.log(columns)
+    console.log(typeof(data))
+
     const table = useReactTable({
         data,
         columns,
@@ -39,7 +41,7 @@ const Table = ({data, numDims}) => {
     })
 
     return (
-        <div className="p-2">
+        <div id="p-2">
         <table>
             <thead>
             {table.getHeaderGroups().map(headerGroup => (

@@ -24,11 +24,6 @@ const Form = ({onSubmit}) => {
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
                 </select>
                 <label for="card">Enter Cardinality</label>
                 <input type="text" id="card" placeholder='Cardinality' onChange={(e) => setCard(e.target.value)}></input>

@@ -2,14 +2,11 @@ import React from 'react';
 
 import { useEffect } from 'react';
 import { useState } from 'react';
-import {DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid' 
 import './App.css';
 import Button from './Components/Button';
 import Header from './Components/Header';
 import Options from './Components/Options';
-import Results from './Components/Results';
 import Form from './Components/Form';
-import ResultColumn from './Components/ResultColumn';
 import Table from './Components/Table';
 
 
@@ -22,48 +19,11 @@ function App() {
   const [card, setCard] = useState(7)
   const [numDims, setNumDims] = useState(5)
   const [numTuples, setNumTuples] = useState(1000)
-  const [numDimsArr, setNumDimsArr] = useState([])
-  const [displayData, setDisplayData] = useState([
-    {
-      0: 2,
-      1: 1,
-      2: 2, 
-      3: 3, 
-      4: 3,
-    },
-    {
-      0: 2,
-      1: 1,
-      2: 2, 
-      3: 3, 
-      4: 3,
-    },
-    {
-      0: 2,
-      1: 1,
-      2: 2, 
-      3: 3, 
-      4: 3,
-    },
-  ])
-  // useEffect(() => {
-  //   const rdiv = document.getElementById('result-container')
-  //   rdiv.innerHTML = "HEllo"
-  // }, [algoResults])
 
   useEffect(() => { 
     console.log(minsup)
   },[minsup])
 
-  // useEffect(()=> { 
-  //   setNumDimsArr((numDimsArr) => {
-  //     numDimsArr = []
-  //     for (let i = 0; i < numDims; i++) { 
-  //       numDimsArr.push(i)
-  //     }
-  //     return numDimsArr
-  //   })
-  // }, [numDims])
 
   var xhr = null;
   var start = 0
@@ -84,10 +44,10 @@ function App() {
           // eslint-disable-next-line no-undef
 
           let secs = Math.abs(end-start)/1000
-          
+          console.log(typeof(xhr.responseText))
+          console.log(xhr.responseText.split('],'))
           setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
           setAlgoResults(xhr.responseText)
-          console.log(typeof xhr.responseText)
       }
   }
   function dataCallbackGenerateData() {
@@ -99,35 +59,8 @@ function App() {
         // eslint-disable-next-line no-undef
         let secs = Math.abs(end-start)/1000
         setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
-        setAlgoResults(xhr.responseText.replaceAll('\\n', ', '))
+        setAlgoResults(xhr.responseText)
 
-
-//         const s = xhr.responseText.replaceAll('\\n', ', ').replaceAll('[', '').replaceAll(',', '').replaceAll(']', '')
-//         let i = 0
-//         let j = -1
-//         let a = new Array(new Array(numDims))
-//         console.log(s.length)
-//         console.log(s)
-//         let dim = 0
-//         while(i<s.length) { 
-
-//             if (j === numDims){
-//               j = 0
-//               dim+= 1 
-//             } else { 
-//               j +=1
-
-//             } 
-//             console.log('dim: ' + dim)
-//             console.log('j: ' + j)
-//             console.log('a[j]: ' + [j])
-            
-            
-
-//             a[dim].push({i: s[i]})
-//             i+=1
-//         }
-//         console.log(a)
     }
 }
 
@@ -232,7 +165,6 @@ function App() {
 
     setCard(newCard)
     setMinsup(newMinsup)
-    setDisplayData()
     console.log(numDims)
   }
 
@@ -253,10 +185,7 @@ function App() {
       <Button onClick={generateData} id='genData'>Generate Data</Button>
       <div id='meta-results'>{metaResults}</div>
       <div id='result-container'>
-        {/* <Table d={() => dispatch({type: 'decrement'})} numDims={numDims}/> */}
-        <Table data={displayData} numDims={numDims}/>
-
-        <Results results={algoResults} />
+        <Table data= {algoResults.replace('[[', '').replace(']]', '').replaceAll('],[', '!').split('!').map((e) => e.replaceAll('"*"', '*').split(','))} numDims={numDims}/>
       </div>
     </div>
     </>

@@ -180,11 +180,11 @@ def createReadableList(starReduce):
     
     j = 0
     for line in starCube:
-         i = 0
-         unit = ''
-         starCubeList.append([])
+        i = 0
+        unit = ''
+        starCubeList.append([])
 
-         while i < len(line):
+        while i < len(line):
             
             if line[i] == '*':
                 unit = '*'
@@ -198,7 +198,7 @@ def createReadableList(starReduce):
                     starCubeList[j].append(unit) 
                 unit = ''
             i +=1
-         j += 1
+        j += 1
 
     return starCubeList
                 
