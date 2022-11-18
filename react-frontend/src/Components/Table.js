@@ -1,4 +1,4 @@
-import React, {useEffect, useReducer, useState} from 'react'
+import React from 'react'
 
 
 import {
@@ -25,8 +25,9 @@ const Table = ({data, numDims}) => {
     const columns = dims.map((dim) => columnHelper.accessor(dim.toString(), {
         cell: info => <i>{info.getValue()}</i>, 
         header: () => <span>{dim}</span>
-    })).concat(columnHelper.accessor('Count', {
-        header: '#',
+    })).concat(columnHelper.accessor(numDims.toString(), {
+        cell: info => <i>{info.getValue()}</i>,
+        header: () => <span>#</span>
     }))
 
     console.log(dims)
