@@ -1,30 +1,30 @@
-import csv
-import os
-
-def parseInput(filename):
-    here = os.path.dirname(os.path.abspath(__file__))
-    filePath = os.path.join(here, filename)
-    file = open(filePath, newline='')
-
+def parseInput(list):
+    
     valueCounts = []
     referenceTable = []
+    tabelIndex = 0
 
-    csvreader = csv.reader(file)
+    for x in list:
+        countsIndex = 0
+        referenceTable.append([])
 
-    for x in csvreader:
-        if '?' in x:
-            continue
-        referenceTable.append(x)
-        for y in range(len(x)):
-            if len(valueCounts) == len(x):
-                if x[y] in valueCounts[y]:
-                    valueCounts[y][x[y]] += 1
-                else:
-                    valueCounts[y][x[y]] = 1
+        for y in x:
+            referenceTable[tabelIndex].append(str(y))
+
+            if len(valueCounts) < len(x):
+                valueCounts.append({})
+                valueCounts[countsIndex][str(y)] = 1
+            elif str(y) in valueCounts[countsIndex]:
+                hold = valueCounts[countsIndex][str(y)]
+                valueCounts[countsIndex][str(y)] = hold + 1
             else:
-                valueCounts.append({x[y]: 1})
+                valueCounts[countsIndex][str(y)] = 1
 
-    return valueCounts,referenceTable
+            countsIndex += 1
+        
+        tabelIndex += 1
+        
+    return valueCounts, referenceTable
 
 def starCubing(starTree,cur_node,min_sup):
     tree = None
@@ -204,15 +204,15 @@ def createReadableList(starReduce):
                 
 class starCube:
 
-    def __init__(self, fileName, minSup):
-        self.fileName = fileName
+    def __init__(self, data, minSup):
+        self.fileName = data
         self.minSup = minSup
         self.starReduce = []
         self.starTree = None
         self.starCube = None
 
     def generateCube(self):
-        count_table, referenceTable = parseInput(self.fileName)
+        count_table, referenceTable = parseInput(self.data)
 
         starReduce = StarReduction(self.minSup, referenceTable, count_table)
 
