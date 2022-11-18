@@ -2,7 +2,7 @@ import time
 
 NUM_DIMS = 4
 CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 1
+MINSUP = 2
 
 class TDC:
     def __init__(self, card, dims, minsup): 
@@ -69,25 +69,35 @@ class TDC:
         for i in range(len(dimensionList)):
             if [dimensionList[j] for j in range(i+1)] not in self.checkedDims:
                 self.checkedDims.append([dimensionList[j] for j in range(i+1)])
-        print(self.checkedDims)
+        # print(self.checkedDims)
         sortedInput = sorted(input, key=lambda x: tuple([x[dimensionList[i]]] for i in range(len(dimensionList))))
         d = {}
-        prune = {}
+        #keeps track of which dimension combinations need to be pruned
+        prune = []
+        pruneD = {}
         # Loop through input sorted on dimension order and insert counts into cube
         for row in sortedInput: 
             
             for i in range(len(dimensionList)):
                 key = [dimensionList[j] for j in range(i+1)]
+                if(tuple(key) not in pruneD):
+                    pruneD[tuple(key)] = True
                 # print('Row: ', row, '   key: ', key, '  ')
                 # With the dimensions we are checking on we check the sorted table and update the cube 
                 starredKey = self.starKey(row, key)
                 if starredKey in d:
-                    d[starredKey] += 1 
-                    # prune[starredKey].append(row) 
+                    d[starredKey] += 1
+                    # sets flag of dimension combination to false if found to be "frequent" for some combination
+                    if(d[starredKey] >= self.minsup):
+                        pruneD[tuple(key)] = False
                 else: 
                     d[starredKey] = 1 
-                    # prune[starredKey] = []
-                    # prune[starredKey].append(row) 
+        # print("pruneD", pruneD)
+        # sets dimension combination to be pruned as smallest flagged dimension combo to maximize amount of pruning
+        for key in pruneD:
+            if pruneD[key] and not prune:
+                prune = list(key)
+        # print("Prune list", prune)
         for key in d: 
             if key not in self.cube:
                 if d[key] >= self.minsup:
@@ -95,10 +105,6 @@ class TDC:
                     outElem = list(key)
                     outElem.append(d[key])
                     self.outList.append(outElem)
-                # else: 
-                    # #prune input 
-                    # for row in prune[key]:
-                    #     input = input.delete(row)
         # Recursive calls happen dimension list is not empty 
         f = True
         while len(dimensionList) > 0 and f:
@@ -108,6 +114,13 @@ class TDC:
                 dimensionList = self.trim(dimensionList)
             else: 
                 dimensionList = self.inc(dimensionList)
+            #if prune dims are subset of current dimensionList, skip to the next dimensionList
+            while(len(prune) > 0 and set(prune).issubset(set(dimensionList))):
+                    # print("pruning", dimensionList)
+                    if self.needsTrimmed(dimensionList):
+                        dimensionList = self.trim(dimensionList)
+                    else: 
+                        dimensionList = self.inc(dimensionList)
             if dimensionList not in self.checkedDims: 
                 f = False 
                 print('Recursive call: ', dimensionList)
