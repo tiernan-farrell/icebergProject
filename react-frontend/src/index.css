@@ -83,7 +83,7 @@ input, select{
   font-weight: 800;
 }
 input:hover { 
-  cursor: pointer;
+  cursor:pointer;
 }
 label { 
   display: flex;
@@ -93,7 +93,7 @@ label {
 }
 select { 
   width: 10.5rem;
-  text-align: center;
+
 }
 form { 
   margin:auto;
