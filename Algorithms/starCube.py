@@ -205,15 +205,40 @@ def createReadableList(starReduce):
 class starCube:
 
     def __init__(self, data, minSup):
-        self.fileName = data
+        self.data = data
         self.minSup = minSup
         self.starReduce = []
         self.starTree = None
         self.starCube = None
 
-    def generateCube(self):
-        count_table, referenceTable = parseInput(self.data)
+    def generateStarTable(self, count_table):
+        star_table = []
+        for dim in count_table: 
+            dim_list = []
+            # {'1': 1, '0': 4}
+            for val in dim: 
+                # {'1': 1}
+                if dim[val] < self.minSup:
+                    dim_list.append(val)
+            star_table.append(dim_list)
+            
+        return star_table
 
+    def generateCube(self):
+        print('minsup: ', self.minSup)
+        print('data: ', self.data)
+        
+        count_table, referenceTable = parseInput(self.data)
+        # This is our count table for data = [(1, 1, 0, 1), (0, 2, 0, 1), (0, 0, 0, 1), (0, 2, 2, 0), (0, 1, 0, 2)]
+        # [{'1': 1, '0': 4}, {'1': 2, '2': 2, '0': 1}, {'0': 4, '2': 1}, {'1': 3, '0': 1, '2': 1}]
+        # We want to generate our star table from this count table 
+        star_table = self.generateStarTable(count_table)
+        # if minsup is 3
+        # star_table = [[1], [1, 2, 0], [2], [0, 2]]
+
+
+        
+        print('\n\nCount Table: ', count_table, '\n\nReference Table: ', referenceTable)
         starReduce = StarReduction(self.minSup, referenceTable, count_table)
 
         starReduce.createStarTable()
@@ -223,5 +248,5 @@ class starCube:
         self.starCube = starCubing(self.starTree, self.starTree, self.minSup)
 
     def getResults(self):
-
+        print( createReadableList(self.starReduce))
         return createReadableList(self.starReduce)

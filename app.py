@@ -39,6 +39,7 @@ def processData(filename):
         tup = tuple(tupleVal)
         list.insert(i,tup)  
         tupleVal = []
+    print(list)
     return list 
         
 @app.route('/data', methods=["GET"])
@@ -120,7 +121,7 @@ def runStarCube():
 
     data = processData('data/data.txt') 
     start = time.perf_counter()
-    star = starCube(data, MINSUP)
+    star = starCube(data, minsup)
     star.generateCube()
     end = time.perf_counter()
     print('\nTotal star cubing() time: ', end-start)

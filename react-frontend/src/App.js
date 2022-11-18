@@ -105,14 +105,14 @@ function App() {
   }
 
   async function getStarCubeResults() { 
-    console.log("Get Buc...");
+    console.log("Get StarCube...");
     // eslint-disable-next-line no-undef
     xhr = getXmlHttpRequestObject(); 
     xhr.onreadystatechange = dataCallback; 
     setAlgoResults("Loading")
     const nowsstarCube = new Date()
     start = nowsstarCube.getTime()
-    await xhr.open("GET", "http://localhost:6969/starCube", true)
+    await xhr.open("GET", "http://localhost:6969/starCube?minsup=" + minsup, true)
     xhr.send(null)
   }
 

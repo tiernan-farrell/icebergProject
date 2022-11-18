@@ -105,14 +105,20 @@ def main():
     #                     ['6', '*', '6'],
     #                     ['*', '4', '6']]))
 
-    l = "['*', '1', '*']"
-    l =l.strip('[')
-    l = l.strip(']')
-    l = l.replace(",", "")
-    l = l.replace("'", "")
-    l = l.replace(" ", "")
-    print(l)
-    print(list(l))
+    # l = "['*', '1', '*']"
+    # l =l.strip('[')
+    # l = l.strip(']')
+    # l = l.replace(",", "")
+    # l = l.replace("'", "")
+    # l = l.replace(" ", "")
+    # print(l)
+    # print(list(l))
         
+        
+    d = {'1': '*', '2': '*'}
+    
+    print(d['1'])
+    print(d['3'])    
+
 if __name__ == "__main__":
     main()
