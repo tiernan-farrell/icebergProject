@@ -74,12 +74,13 @@ button:hover {
 
 }
 
-input{
+input, select{
   width: auto;
   height: 2 rem;
   border: 5px solid lightblue;
   border-radius: 5px;
   display: flex;
+  font-weight: 800;
 }
 input:hover { 
   cursor: pointer;
@@ -90,7 +91,10 @@ label {
   margin-top: 15px;
   background-color: black;
 }
-
+select { 
+  width: 10.5rem;
+  text-align: center;
+}
 form { 
   margin:auto;
   align-content: center;
@@ -100,3 +104,20 @@ form {
   width: 9.95rem;
 }
 
+#p-2 { 
+  margin: auto;
+  text-align: center;
+}
+table {
+  margin: auto;
+  width: 90%;
+  background-color: black;
+  border: 5px solid black; 
+  border-radius: 5px;
+  font-size: 2rem;
+
+}
+tr {
+  background-color: white;
+
+}
