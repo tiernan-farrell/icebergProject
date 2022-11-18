@@ -1,8 +1,8 @@
 import time
 
-NUM_DIMS = 4
+NUM_DIMS = 5
 CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 2
+MINSUP = 10
 
 class TDC:
     def __init__(self, card, dims, minsup): 
@@ -115,11 +115,15 @@ class TDC:
             else: 
                 dimensionList = self.inc(dimensionList)
             #if prune dims are subset of current dimensionList, skip to the next dimensionList
-            if(prune and set(prune).issubset(set(dimensionList))):
-                    print("pruning", dimensionList)
+            while(prune and set(prune).issubset(set(dimensionList))):
+                    # print("pruning", dimensionList)
                     for i in range(len(dimensionList)):
                         if [dimensionList[j] for j in range(i+1)] not in self.checkedDims:
                             self.checkedDims.append([dimensionList[j] for j in range(i+1)])
+                    if self.needsTrimmed(dimensionList):
+                        dimensionList = self.trim(dimensionList)
+                    else: 
+                        dimensionList = self.inc(dimensionList)
             if dimensionList not in self.checkedDims: 
                 f = False 
                 # print('Recursive call: ', dimensionList)
@@ -162,7 +166,7 @@ def processData(filename):
     return list 
     
 def main(): 
-    data = processData('data/testData.txt') 
+    data = processData('data/testData2.txt') 
     start = time.time()
     tdc = TDC(CARDINALITY, NUM_DIMS, MINSUP)
     tdc.tdc(data, [i for i in range(NUM_DIMS)])
