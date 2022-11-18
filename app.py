@@ -116,8 +116,11 @@ def runTdc():
 @app.route('/starCube', methods=["GET"])   
 def runStarCube():
 
+    minsup = request.args.get('minsup', default=1, type = int)
+
+    data = processData('data/data.txt') 
     start = time.perf_counter()
-    star = starCube("data/data.csv", MINSUP)
+    star = starCube(data, MINSUP)
     star.generateCube()
     end = time.perf_counter()
     print('\nTotal star cubing() time: ', end-start)
