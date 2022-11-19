@@ -22,7 +22,19 @@ def processData(filename):
         
 
 
+class Tree: 
+    
+    def __init__(self):
+        pass
 
+class Node: 
+    
+    def __init__(self, attrVal, count, descendents=None, siblings=None):
+        self.val = attrVal
+        self.count = count
+        self.descendents = descendents
+        self.siblings = siblings
+        
 
 
 
@@ -83,13 +95,16 @@ class starCube:
 
 
     def __init__(self, data, numDims, minSup):
+        # Given values from user
         self.data = data
         self.numDims = numDims
         self.minSup = minSup
+        # Init empty node/tree lists
+        self.freeNodes = [Node(0, 0) for i in range(.2*len(data)*numDims)]
+        self.freeTrees = [Tree() for i in range(.2*len(data)*numDims)]
+        # Compress base table
         self.compressedTable = self.compressTable(self.data)
-        self.starReduce = []
-        self.starTree = None
-        self.starCube = None
+        
         # Allocate kdn nodes into a buffer
         
     def compressTable(self, data):
