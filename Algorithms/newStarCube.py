@@ -20,12 +20,10 @@ def processData(filename):
         tupleVal = []
     return list 
         
-
-
 class Tree: 
     
-    def __init__(self):
-        pass
+    def __init__(self, root):
+        self.root = root
 
 class Node: 
     
@@ -100,25 +98,85 @@ class starCube:
         self.numDims = numDims
         self.minSup = minSup
         # Init empty node/tree lists
-        self.freeNodes = [Node(0, 0) for i in range(.2*len(data)*numDims)]
-        self.freeTrees = [Tree() for i in range(.2*len(data)*numDims)]
+        #self.freeNodes = [Node(0, 0) for i in range(.2*len(data)*numDims)]
+        #self.freeTrees = [Tree() for i in range(.2*len(data)*numDims)]
+        # Create value count dictionary to create star table and compressed table
+        self.countValues = self.getValueCountDictionary(self.data)
         # Compress base table
-        self.compressedTable = self.compressTable(self.data)
-        
+        self.compressedTable = self.compressTable(self.data, self.countValues, self.minSup)
+        # Create star table
+        self.starTable = self.createStarTable(self.countValues, self.minSup)
         # Allocate kdn nodes into a buffer
         
-    def compressTable(self, data):
-        star_table = []
-        for dim in data: 
-            dim_list = []
-            # {'1': 1, '0': 4}
-            for val in dim: 
-                # {'1': 1}
-                if dim[val] < self.minSup:
-                    dim_list.append(val)
-            star_table.append(dim_list)
+    # Takes in processed data input and returns a list of dimension dictionarys with their value counts 
+    # For Example [(1,2), (3,3)] = [{1:1, {2:2}, {3:2} ]
+    def getValueCountDictionary(self, data):
+        countValues = []
+
+
+        for tuples in data:
+            dimensionIndex = 0
+
+            for value in tuples:
+                # Creates new dem dict and adds first value of dim to countValues list if length of tuple (# of columns) 
+                # is more then num of dicts (# of dims) in countValues
+                if len(countValues) < len(tuples):
+                    countValues.append({})
+                    countValues[dimensionIndex][value] = 1
+                # if value in tuple is already in dict then increase count
+                elif value in countValues[dimensionIndex]:
+                    hold = countValues[dimensionIndex][value]
+                    countValues[dimensionIndex][value] = hold + 1
+                # otherwise add new value to dict and set it to 1
+                else:
+                    countValues[dimensionIndex][value] = 1
+
+                dimensionIndex += 1
+
+        return countValues
+
+    # Compresses data input table through countValues and minSup. If count of value in data table is less than minSup
+    # then replace it with '*'. Then makes a compressed table dict with tuples and counts of number of tuples that 
+    # are the same.
+    def compressTable(self, data, countValues, minSup):
+        compressedTable = {}
+        tempTable = []
+        tupleIndex = 0
+
+        for tuples in data:
+            tempList = []
+            dimIndex = 0
+
+            for value in tuples:
+                if countValues[dimIndex].get(value) < minSup:
+                    tempList.append('*')
+                else:
+                    tempList.append(value)
+                dimIndex += 1
+            tempTable.append(tuple(tempList))
+            tupleIndex += 1
+
+        for tuples in tempTable:
+            if not tuples in compressedTable.keys():
+                compressedTable[tuples] = tempTable.count(tuples)
+
+        return compressedTable
+
+    # Creates the star table in from countValues and minSup. If count for value in countValues is less than minSup
+    # add value to starTable.  StarTable is filled with tuples (partitioned by dimension) of values less than minSup.
+    def createStarTable(self, countValues, minSup):
+        starTable = []
+
+        for dimension in countValues:
+            tempList = []
             
-        return star_table
+            for value in dimension:
+                if dimension.get(value) < minSup:
+                    tempList.append(value)
+            
+            starTable.append(tuple(tempList))
+        
+        return starTable
     
         
 data = processData('../data/data.txt')
