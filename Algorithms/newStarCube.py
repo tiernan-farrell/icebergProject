@@ -25,6 +25,40 @@ class Tree:
     def __init__(self, root):
         self.root = root
 
+    def addBranch(self, root, tup, count):
+        
+        if len(root.descendents) > 0:
+            needsNode = True
+            for descendent in root.descendents:
+                if descendent.attrVal == tup[0]:
+                    descendent.count += count
+                    needsNode = False
+            
+            if needsNode:
+                newNode = Node(tup[0], count)
+                root.descenents.append[newNode]
+
+        else:
+            newNode = Node(tup[0], count)
+            root.descenents.append[newNode]
+
+        forNewTuple = []
+        index = 0
+        while index < len(tup):
+            if not index == 0:
+                forNewTuple.append(tup[index])
+
+        self.addBranch(newNode, tuple(forNewTuple), count)
+    
+    def addSiblings(self,descendents):
+            for descendentx in descendents:
+
+               for descendenty in descendents:
+                if not descendentx.attrVal == descendenty.attrVal:
+                    descendentx.siblings.append(descendenty)
+            
+            self.addSiblings(descendentx.descendents) 
+
 class Node: 
     
     def __init__(self, attrVal, count, descendents=None, siblings=None):
@@ -177,6 +211,28 @@ class starCube:
             starTable.append(tuple(tempList))
         
         return starTable
+
+    def createStarTree(self, compressedTable):
+
+        countList = compressedTable.values()
+        rootCount = 0
+
+        for value in countList:
+            rootCount += value 
+
+        root = Node('root', rootCount)
+
+        starTree = Tree(root)
+        dim = 0
+
+        while dim < len(compressedTable[0]):
+            for tuple in compressedTable:
+                count = compressedTable.get(tuple)
+                starTree.addBranch(root, tuple, count)
+
+        starTree.addSiblings(starTree.root.descendents)
+
+        return starTree
     
         
 data = processData('../data/data.txt')
