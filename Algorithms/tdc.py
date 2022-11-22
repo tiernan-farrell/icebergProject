@@ -32,7 +32,7 @@ class TDC:
         trimList.reverse()
 
         if l == trimList:
-            print('list to be trimmed: ', l)
+            # print('list to be trimmed: ', l)
             return True
         
         return False
@@ -69,7 +69,7 @@ class TDC:
         for i in range(len(dimensionList)):
             if [dimensionList[j] for j in range(i+1)] not in self.checkedDims:
                 self.checkedDims.append([dimensionList[j] for j in range(i+1)])
-        print(self.checkedDims)
+        # print(self.checkedDims)
         sortedInput = sorted(input, key=lambda x: tuple([x[dimensionList[i]]] for i in range(len(dimensionList))))
         d = {}
         prune = {}
@@ -102,7 +102,7 @@ class TDC:
         # Recursive calls happen dimension list is not empty 
         f = True
         while len(dimensionList) > 0 and f:
-            print(dimensionList)
+            # print(dimensionList)
             # if dimension list needs to be trimmed
             if self.needsTrimmed(dimensionList):
                 dimensionList = self.trim(dimensionList)
@@ -110,7 +110,7 @@ class TDC:
                 dimensionList = self.inc(dimensionList)
             if dimensionList not in self.checkedDims: 
                 f = False 
-                print('Recursive call: ', dimensionList)
+                # print('Recursive call: ', dimensionList)
                 self.tdc(input, dimensionList)            
                     
             
