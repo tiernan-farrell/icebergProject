@@ -105,14 +105,18 @@ def main():
     #                     ['6', '*', '6'],
     #                     ['*', '4', '6']]))
 
-    l = "['*', '1', '*']"
-    l =l.strip('[')
-    l = l.strip(']')
-    l = l.replace(",", "")
-    l = l.replace("'", "")
-    l = l.replace(" ", "")
-    print(l)
-    print(list(l))
+    # l = "['*', '1', '*']"
+    # l =l.strip('[')
+    # l = l.strip(']')
+    # l = l.replace(",", "")
+    # l = l.replace("'", "")
+    # l = l.replace(" ", "")
+    # print(l)
+    # print(list(l))
         
+    l = 'data/100tuples5dims2card.txt'
+    print(l.split('tuples')[1][0])
+    print(l.split('dims')[1][0])
+    print(l)
 if __name__ == "__main__":
     main()
