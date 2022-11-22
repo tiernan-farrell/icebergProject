@@ -20,12 +20,12 @@ function App() {
       break
   }
   return (
-    <>
+    <div className='app'>
       <Navbar />
       <div className="container">
         <Component />
       </div>
-    </> 
+    </ div> 
   );
 }
 

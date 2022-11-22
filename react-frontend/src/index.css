@@ -132,8 +132,19 @@ tr {
   padding: 0 1rem;
 }
 
+.app{
+  background-color: lightblue;
+}
+
 .site-title{
   font-size: 2rem;
+}
+
+.about{
+  background-color: lightblue;
+  text-align: left;
+  margin: auto;
+  width: 75%;
 }
 
 .nav ul{
@@ -164,3 +175,4 @@ tr {
 .container {
   text-align: center;
 }
+
