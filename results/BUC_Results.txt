@@ -1,0 +1,880 @@
+
+
+data/100tuples5dims2card.txtBUC time: 0.004378169999995407 seconds 
+BUC memory usage: 47500 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.003034381999981406 seconds 
+BUC memory usage: 21185 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.002139363999987154 seconds 
+BUC memory usage: 10604 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.001585720999997875 seconds 
+BUC memory usage: 7052 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0010977430000025379 seconds 
+BUC memory usage: 6572 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0008527159999971445 seconds 
+BUC memory usage: 6124 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.00032577599998262485 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0003683369999976094 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.00029777699998589924 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.00038593700000433273 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0006074920000003203 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.014129332000010209 seconds 
+BUC memory usage: 245162 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0015607709999869712 seconds 
+BUC memory usage: 8073 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0011255920000223796 seconds 
+BUC memory usage: 6860 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0005685810000102265 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0012294740000129423 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0008048369999755778 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0006114419999789789 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0008109370000113358 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0005246000000056483 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.00040841899999577436 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0004553889999954208 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.003592021999992312 seconds 
+BUC memory usage: 38604 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.003279085000002624 seconds 
+BUC memory usage: 22332 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.003007059999987405 seconds 
+BUC memory usage: 19500 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.002266085000002249 seconds 
+BUC memory usage: 16492 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0020969100000058916 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.002206103000020221 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0023250550000000203 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.002524668999996038 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0024880789999883746 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.002602660999997397 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0019184869999833154 seconds 
+BUC memory usage: 16044 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.17223324100001491 seconds 
+BUC memory usage: 2899484 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.01361002100000519 seconds 
+BUC memory usage: 58332 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.006465007000002743 seconds 
+BUC memory usage: 20188 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.00791418099998964 seconds 
+BUC memory usage: 20188 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.006358541999986755 seconds 
+BUC memory usage: 20188 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.006111357000008866 seconds 
+BUC memory usage: 19996 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.007327446999994436 seconds 
+BUC memory usage: 18684 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.002781206999998176 seconds 
+BUC memory usage: 16636 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.0018302409999932934 seconds 
+BUC memory usage: 16124 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.0021430060000113826 seconds 
+BUC memory usage: 16124 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.0019937540000114495 seconds 
+BUC memory usage: 16124 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.007300823999997874 seconds 
+BUC memory usage: 70164 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.007089557999989893 seconds 
+BUC memory usage: 42540 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.006491367999984732 seconds 
+BUC memory usage: 41820 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004789909999999509 seconds 
+BUC memory usage: 34636 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004966373000002022 seconds 
+BUC memory usage: 31980 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004583325999988119 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004914221999996471 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004556706999977678 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004939232999987553 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004736707999995815 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004603406000001087 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.03815513600000031 seconds 
+BUC memory usage: 463876 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.02497642299999825 seconds 
+BUC memory usage: 153732 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.016515944999980547 seconds 
+BUC memory usage: 71948 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.016535251999982847 seconds 
+BUC memory usage: 54820 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.015388667999985728 seconds 
+BUC memory usage: 54820 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.016600498000002517 seconds 
+BUC memory usage: 53228 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.016026315000004843 seconds 
+BUC memory usage: 46036 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.011327391999998326 seconds 
+BUC memory usage: 35636 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.008811481999998705 seconds 
+BUC memory usage: 32532 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.00971804499999962 seconds 
+BUC memory usage: 32340 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.01009532899999499 seconds 
+BUC memory usage: 32340 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 1.094247820000021 seconds 
+BUC memory usage: 13166604 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.062239023000017824 seconds 
+BUC memory usage: 248852 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.018973866000010275 seconds 
+BUC memory usage: 43620 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015106270999979188 seconds 
+BUC memory usage: 37788 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.016763364000013325 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015084663999999748 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015393692999964514 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015717143000017586 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015371646999994937 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.016849338999975316 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.018040106999990257 seconds 
+BUC memory usage: 37404 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07824357399999826 seconds 
+BUC memory usage: 348820 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07641763199995921 seconds 
+BUC memory usage: 348428 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07742178600000216 seconds 
+BUC memory usage: 348428 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07745289600001115 seconds 
+BUC memory usage: 348188 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.08312424100000726 seconds 
+BUC memory usage: 344596 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07618308499996829 seconds 
+BUC memory usage: 328972 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07604563900002859 seconds 
+BUC memory usage: 321956 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07434465900001896 seconds 
+BUC memory usage: 320716 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07934493499999462 seconds 
+BUC memory usage: 320716 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.08060451199997942 seconds 
+BUC memory usage: 320716 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07627317999998695 seconds 
+BUC memory usage: 320716 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7209857149999834 seconds 
+BUC memory usage: 412196 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7402119359999801 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.711655425999993 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7176635120000014 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7337564960000122 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7265183449999881 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.731189205000021 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7115524369999662 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7198945119999962 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7420321149999722 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.6712887269999896 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 9.849329577000049 seconds 
+BUC memory usage: 98627816 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.8554152550000254 seconds 
+BUC memory usage: 9942544 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.2751853400000073 seconds 
+BUC memory usage: 3384136 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.1225992380000207 seconds 
+BUC memory usage: 1821568 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.1059305269999413 seconds 
+BUC memory usage: 1811080 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.1019450830000324 seconds 
+BUC memory usage: 1810712 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.1148764560000473 seconds 
+BUC memory usage: 1798568 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.0676130610000882 seconds 
+BUC memory usage: 1645352 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 0.9290935499999478 seconds 
+BUC memory usage: 1163192 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 0.7907289390000187 seconds 
+BUC memory usage: 654400 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 0.7916216480000458 seconds 
+BUC memory usage: 487056 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.003475822999917 seconds 
+BUC memory usage: 47500 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.002839658000084455 seconds 
+BUC memory usage: 21185 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0015515350000896433 seconds 
+BUC memory usage: 10604 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0009536989998650824 seconds 
+BUC memory usage: 7052 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0010445799998706207 seconds 
+BUC memory usage: 6572 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0006020349999289465 seconds 
+BUC memory usage: 6124 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.00024091299997053284 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.00032145299996955146 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0003420630000618985 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0003950639998038241 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims2card.txtBUC time: 0.0003234030000385246 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.013726048999842533 seconds 
+BUC memory usage: 245162 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.001671836000014082 seconds 
+BUC memory usage: 8073 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0008374290000574547 seconds 
+BUC memory usage: 6860 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0004359340000519296 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.00036832299997513473 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0004024740001113969 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.00036896300002808857 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0003886840001996461 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.00041512400002829963 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0003409539999665867 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/100tuples5dims5card.txtBUC time: 0.0002462529998865648 seconds 
+BUC memory usage: 5516 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.003566264000028241 seconds 
+BUC memory usage: 38604 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0027831869999772607 seconds 
+BUC memory usage: 22332 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0025901960000282997 seconds 
+BUC memory usage: 19500 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0024089229998480732 seconds 
+BUC memory usage: 16492 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0022530510000251525 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0022092200001679885 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0022507010000936134 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0019991890001165302 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.002161069999829124 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.0018105159999777243 seconds 
+BUC memory usage: 16428 bytes 
+
+
+data/500tuples3dims5card.txtBUC time: 0.001570385999912105 seconds 
+BUC memory usage: 16044 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.17127041200001258 seconds 
+BUC memory usage: 2899484 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.013178174000131548 seconds 
+BUC memory usage: 58332 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.006043867000016689 seconds 
+BUC memory usage: 20188 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.00637896000012006 seconds 
+BUC memory usage: 20188 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.006403550999948493 seconds 
+BUC memory usage: 20188 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.006334280000146464 seconds 
+BUC memory usage: 19996 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.0049206349999622034 seconds 
+BUC memory usage: 18684 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.0024984829999539215 seconds 
+BUC memory usage: 16636 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.0016522859998531203 seconds 
+BUC memory usage: 16124 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.0017943380000815523 seconds 
+BUC memory usage: 16124 bytes 
+
+
+data/500tuples6dims8card.txtBUC time: 0.0018395759998384165 seconds 
+BUC memory usage: 16124 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.0073232489999099926 seconds 
+BUC memory usage: 70164 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.005550431999836292 seconds 
+BUC memory usage: 42540 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.005615722999891659 seconds 
+BUC memory usage: 41820 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.00482527500003016 seconds 
+BUC memory usage: 34636 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.0045037120000870345 seconds 
+BUC memory usage: 31980 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004032587999972748 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004360691000101724 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004158228000051167 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004328120000081981 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004364980999980617 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples3dims6card.txtBUC time: 0.004485032000047795 seconds 
+BUC memory usage: 31916 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.03361480300009134 seconds 
+BUC memory usage: 463876 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.022500678999904267 seconds 
+BUC memory usage: 153732 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.01686965700014298 seconds 
+BUC memory usage: 71948 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.015334992999896713 seconds 
+BUC memory usage: 54820 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.01479639700005464 seconds 
+BUC memory usage: 54820 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.014350422000006802 seconds 
+BUC memory usage: 53228 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.015196159999959491 seconds 
+BUC memory usage: 46036 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.00979605099996661 seconds 
+BUC memory usage: 35636 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.008657850999952643 seconds 
+BUC memory usage: 32532 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.007858483000063643 seconds 
+BUC memory usage: 32340 bytes 
+
+
+data/1000tuples5dims4card.txtBUC time: 0.009159504000081142 seconds 
+BUC memory usage: 32340 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.8344324139998207 seconds 
+BUC memory usage: 13166604 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.06552137199992103 seconds 
+BUC memory usage: 248852 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.018159722999826045 seconds 
+BUC memory usage: 43620 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.01611754500004281 seconds 
+BUC memory usage: 37788 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015758622000021205 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015365117000101236 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015710838999893895 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.014825001999952292 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.015197374000081254 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.01501764199997524 seconds 
+BUC memory usage: 37244 bytes 
+
+
+data/1000tuples7dims9card.txtBUC time: 0.014632580000125017 seconds 
+BUC memory usage: 37404 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07807599600005233 seconds 
+BUC memory usage: 348820 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07826565699997445 seconds 
+BUC memory usage: 348428 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07864000099993973 seconds 
+BUC memory usage: 348428 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07602065499986566 seconds 
+BUC memory usage: 348188 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07773424900005921 seconds 
+BUC memory usage: 344596 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07888077800021165 seconds 
+BUC memory usage: 328972 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07693732899997485 seconds 
+BUC memory usage: 321956 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.0776404939999793 seconds 
+BUC memory usage: 320716 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07474054799990881 seconds 
+BUC memory usage: 320716 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07570993700005602 seconds 
+BUC memory usage: 320716 bytes 
+
+
+data/10000tuples3dims6card.txtBUC time: 0.07823520799979633 seconds 
+BUC memory usage: 320716 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.6935646450001514 seconds 
+BUC memory usage: 412196 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7016425650001565 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7176826349998464 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7327757269999893 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.6943205270001727 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7365698230000817 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7157517880000341 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7033481590001429 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7282676690001608 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7229499310001302 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples6dims2card.txtBUC time: 0.7294982460000483 seconds 
+BUC memory usage: 410548 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 5.465496440999914 seconds 
+BUC memory usage: 98627816 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.8336938109998755 seconds 
+BUC memory usage: 9942544 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.2763582500001576 seconds 
+BUC memory usage: 3384136 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.1519536680000328 seconds 
+BUC memory usage: 1821568 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.1383418860000347 seconds 
+BUC memory usage: 1811080 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.1335090879999825 seconds 
+BUC memory usage: 1810712 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.1049888200000169 seconds 
+BUC memory usage: 1798568 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 1.0788021010000648 seconds 
+BUC memory usage: 1645352 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 0.9577580330001183 seconds 
+BUC memory usage: 1163192 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 0.8568093159999535 seconds 
+BUC memory usage: 654400 bytes 
+
+
+data/10000tuples8dims5card.txtBUC time: 0.776146425999741 seconds 
+BUC memory usage: 487056 bytes 
