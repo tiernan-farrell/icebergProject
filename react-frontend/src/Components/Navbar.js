@@ -3,7 +3,6 @@ export default function Navbar(){
         <nav className="nav">
             <a href="/" className="site-title">Home</a>
             <ul>
-                <CustomLink href="/algorithms">Algorithms</CustomLink>
                 <CustomLink href="/about">About</CustomLink>
             </ul>
         </nav>

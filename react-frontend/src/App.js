@@ -9,14 +9,11 @@ import About from "./Pages/About";
 function App() {
   let Component 
   switch (window.location.pathname) {
-    case "/":
-      Component = Home
-      break
-    case "/algorithms":
-      Component = Algorithms
-      break
     case "/about":
       Component = About
+      break
+    default:
+      Component = Algorithms
       break
   }
   return (
