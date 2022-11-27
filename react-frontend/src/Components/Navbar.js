@@ -4,6 +4,8 @@ export default function Navbar(){
             <a href="/" className="site-title">Home</a>
             <ul>
                 <CustomLink href="/about">About</CustomLink>
+                <CustomLink href="/results">Test Results</CustomLink>
+
             </ul>
         </nav>
     )

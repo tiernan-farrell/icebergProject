@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './Components/Navbar';
 import Algorithms from './Pages/Algorithms';
 import About from "./Pages/About";
-
+import Results from "./Pages/Results";
 
 function App() {
   let Component 
@@ -11,7 +11,10 @@ function App() {
     case "/about":
       Component = About
       break
-    default:
+      case "/results":
+        Component = Results
+        break
+      default:
       Component = Algorithms
       break
   }
