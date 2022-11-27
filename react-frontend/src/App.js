@@ -2,7 +2,6 @@ import React from 'react';
 
 import Navbar from './Components/Navbar';
 import Algorithms from './Pages/Algorithms';
-import Home from "./Pages/Home";
 import About from "./Pages/About";
 
 
