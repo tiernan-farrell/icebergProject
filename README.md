@@ -115,9 +115,3 @@ ABCD, ABC, AB and A. Then it continues looping checking regions in the order: AB
 - This can best be seen with the example below:
 <img width="900" alt="image" src="images\Apriori.png">
 - Supposing the input table 4, on the first pass of data, Apriori determines that single values in Table 5 are frequent.  Table 6 shows the candidate combinations that result from the combinations in Table 5.  The candidate combinations are then passed through, resulting in the cominbations and counts seen in Table 7.  3-set candidates are then generated for the candidate combinations as seen in Table 8, and then passed through resulting in Table 9.  Since {a2, c2, d2} is not frequent no more candidate combinations can be derived, so the algorithm finishes executing.
-
-## H-Cubing
-
-## Star-Cubing
-
-## Multiway
