@@ -8,16 +8,11 @@ import time
 from flask import Flask, request
 from flask_cors import CORS
 
-NUM_DIMS = 5
-CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 10000
-
 outList = []
 dataCount = []
 
 app = Flask(__name__)
 CORS(app)      
-times = {}
             
 def processData(filename): 
     file = open(filename)
@@ -74,7 +69,6 @@ def runBuc():
     buc = BUC([card for i in range(numDims)], numDims, minsup)
     buc.buc(data, 0, ['*' for i in range(numDims)])
     end = time.perf_counter()
-    times['buc'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal buc() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
     return buc.getResults()
 
@@ -92,7 +86,6 @@ def runApriori():
     apriori = Apriori([card for i in range(numDims)], numDims, minsup)
     apriori.apriori(data)
     end = time.perf_counter()
-    times['apriori'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal apriori() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
     return apriori.getResults()
 
@@ -108,42 +101,10 @@ def runTdc():
     tdc = TDC([card for i in range(numDims)], numDims, minsup)
     tdc.tdc(data, [i for i in range(numDims)])
     end = time.perf_counter()
-    times['tdc'] = end - start
     print('Tuples in datase: ', len(data), '\nTotal Top Down Computation() time: ', end-start, '\nTotal iceberg cube size: ', len(outList))
     return tdc.getResults()
 
-@app.route('/starCube', methods=["GET"])   
-def runStarCube():
 
-    minsup = request.args.get('minsup', default=1, type = int)
-
-    data = processData('data/data.txt') 
-    start = time.perf_counter()
-    star = starCube(data, MINSUP)
-    star.generateCube()
-    end = time.perf_counter()
-    print('\nTotal star cubing() time: ', end-start)
-    res = star.getResults()
-    return res
-
-@app.route('/getComputationTimes', methods=["GET"])
-def getTimes(): 
-    if 'buc' not in times: 
-        sbuc = time.perf_counter()
-        runBuc()
-        ebuc = time.perf_counter()
-        times['buc'] = ebuc - sbuc
-    if 'tdc' not in times: 
-        stdc = time.perf_counter()
-        runTdc()
-        etdc = time.perf_counter()
-        times['tdc'] = etdc - stdc
-    if 'apriori' not in times: 
-        sap = time.perf_counter()
-        runBuc()
-        eap = time.perf_counter()
-        times['apriori'] = eap - sap
-    return times
     
 @app.route('/generateData', methods=["GET"])
 def generateData():

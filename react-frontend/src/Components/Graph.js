@@ -8,24 +8,24 @@ const Graph = (({data, title}) => {
         <div id='charts'>
             <h4>{title.name}</h4>
             <LineChart
-            width={500}
-            height={400}
+            width={600}
+            height={500}
             data={data}
             margin={{
                 top: 0,
-                right: 30,
-                left: 20,
-                bottom: 50,
+                right: 10,
+                left: 30,
+                bottom: 25,
             }}
             >
-                <Label value="100 tuples" offset={0} position="top" />
                 <CartesianGrid strokeDasharray="3 3" stroke="#5A5A5A"/>
                 <XAxis dataKey="name" stroke='black'>
-                <Label value="Minsup" offset={20} position="bottom" />
+                    <Label value="Minsup" offset={19} position="bottom" style={{textAnchor: 'middle', fontSize: "150%"}}/>
                 </XAxis>
 
-                <YAxis stroke='black'>
-                    <Label value={title.label} position="insidebottomleft" angle={-90} offset={20} />
+                <YAxis stroke='black' angle={-45}>
+                    
+                    <Label angle={-90} value={title.label} position="left"  style={{textAnchor: 'middle', fontSize: "150%"}}/>
                 </YAxis>
                 <Tooltip />
                 <Legend />

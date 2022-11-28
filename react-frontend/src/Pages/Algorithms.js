@@ -164,8 +164,6 @@ function Algorithms() {
       <Button onClick={getBucResults}>BUC</Button>
       <Button onClick={getTDCResults}>TDC</Button>
       <Button onClick={getAprioriResults}>Apriori</Button>
-      {/* <Button onClick={getStarCubeResults}>StarCube</Button> */}
-      <Button onClick={getRunTimes}>RunTimes</Button>
       <Form onSubmit={chanegeStates} />    
       <Button onClick={generateData} id='genData'>Generate Data</Button>
       <div id='meta-results'>{metaResults}</div>
