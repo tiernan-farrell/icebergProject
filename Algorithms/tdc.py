@@ -1,8 +1,8 @@
 import time
 
-NUM_DIMS = 5
-CARDINALITY = [7 for i in range(NUM_DIMS)]
-MINSUP = 10
+NUM_DIMS = 6
+CARDINALITY = [2 for i in range(NUM_DIMS)]
+MINSUP = 1000
 
 class TDC:
     def __init__(self, card, dims, minsup): 
@@ -66,22 +66,25 @@ class TDC:
     
     
     def tdc(self, input: list, dimensionList: list):
+        pruneList = []
         for i in range(len(dimensionList)):
             if [dimensionList[j] for j in range(i+1)] not in self.checkedDims:
                 self.checkedDims.append([dimensionList[j] for j in range(i+1)])
+                pruneList.append([dimensionList[j] for j in range(i+1)])
+        if(pruneList):
+            prune = pruneList[0]
         # print(self.checkedDims)
         sortedInput = sorted(input, key=lambda x: tuple([x[dimensionList[i]]] for i in range(len(dimensionList))))
         d = {}
         #keeps track of which dimension combinations need to be pruned
-        prune = []
-        pruneD = {}
+        # prune = []
+        # pruneD = {}
         # Loop through input sorted on dimension order and insert counts into cube
         for row in sortedInput: 
-            
             for i in range(len(dimensionList)):
                 key = [dimensionList[j] for j in range(i+1)]
-                if(tuple(key) not in pruneD):
-                    pruneD[tuple(key)] = True
+                # if(tuple(key) not in pruneD):
+                #     pruneD[tuple(key)] = True
                 # print('Row: ', row, '   key: ', key, '  ')
                 # With the dimensions we are checking on we check the sorted table and update the cube 
                 starredKey = self.starKey(row, key)
@@ -89,14 +92,21 @@ class TDC:
                     d[starredKey] += 1
                     # sets flag of dimension combination to false if found to be "frequent" for some combination
                     if(d[starredKey] >= self.minsup):
-                        pruneD[tuple(key)] = False
+                        # pruneD[tuple(key)] = False
+                        if key in pruneList:
+                            pruneList.remove(key)
+                            if pruneList:
+                                prune = pruneList[0]
+                            else:
+                                prune = []
                 else: 
                     d[starredKey] = 1 
         # print("pruneD", pruneD)
         # sets dimension combination to be pruned as smallest flagged dimension combo to maximize amount of pruning
-        for key in pruneD:
-            if pruneD[key] and not prune:
-                prune = list(key)
+        # for key in pruneD:
+        #     if pruneD[key] and not prune:
+        #         prune = list(key)
+
         # print("Prune list", prune)
         for key in d: 
             if key not in self.cube:
@@ -115,7 +125,8 @@ class TDC:
             else: 
                 dimensionList = self.inc(dimensionList)
             #if prune dims are subset of current dimensionList, skip to the next dimensionList
-            while(prune and set(prune).issubset(set(dimensionList))):
+            # while(prune and set(prune).issubset(set(dimensionList))):
+            while(prune and all(x in dimensionList for x in prune)):
                     # print("pruning", dimensionList)
                     for i in range(len(dimensionList)):
                         if [dimensionList[j] for j in range(i+1)] not in self.checkedDims:
@@ -166,7 +177,7 @@ def processData(filename):
     return list 
     
 def main(): 
-    data = processData('data/testData2.txt') 
+    data = processData('data/10000tuples6dims2card.txt') 
     start = time.time()
     tdc = TDC(CARDINALITY, NUM_DIMS, MINSUP)
     tdc.tdc(data, [i for i in range(NUM_DIMS)])
