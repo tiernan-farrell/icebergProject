@@ -80,13 +80,13 @@ button:hover {
 }
 
 #charts {
-  display: flexbox;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   flex: auto;
   height: 100vh; 
   color: black;
-  text-align: center;
-  align-items: center;
-  width: 50% ;
+  width: 100vw ;
 }
 
 .line-chart { 

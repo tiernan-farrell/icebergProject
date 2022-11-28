@@ -23,7 +23,6 @@ const Form = ({onSubmit}) => {
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
-                    <option value="6">6</option>
                 </select>
                 <label for="card">Enter Cardinality</label>
                 <input type="text" id="card" placeholder='Cardinality' onChange={(e) => setCard(e.target.value)}></input>
