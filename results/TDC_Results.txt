@@ -1,0 +1,704 @@
+
+
+data/100tuples5dims2card.txtTDC time: 0.03759887800001138 seconds 
+TDC memory usage: 224836 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.03560248599998772 seconds 
+TDC memory usage: 169028 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.03233932500000947 seconds 
+TDC memory usage: 145444 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.029112634000000526 seconds 
+TDC memory usage: 102916 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.029210245000001578 seconds 
+TDC memory usage: 88780 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.02987237499999651 seconds 
+TDC memory usage: 69140 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.024654572999992297 seconds 
+TDC memory usage: 57684 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.024351446999986592 seconds 
+TDC memory usage: 57684 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.024061302999996315 seconds 
+TDC memory usage: 57324 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.024171924999990324 seconds 
+TDC memory usage: 50484 bytes 
+
+
+data/100tuples5dims2card.txtTDC time: 0.023974532000011095 seconds 
+TDC memory usage: 50484 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.037442645999988144 seconds 
+TDC memory usage: 466596 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.02989683500001661 seconds 
+TDC memory usage: 106956 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.029610880999996425 seconds 
+TDC memory usage: 105428 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.02488630599998487 seconds 
+TDC memory usage: 82548 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.024877066000016157 seconds 
+TDC memory usage: 79828 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.02469296200001736 seconds 
+TDC memory usage: 79828 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.025257092000003922 seconds 
+TDC memory usage: 79828 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.02487223599999311 seconds 
+TDC memory usage: 79828 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.024829724999989367 seconds 
+TDC memory usage: 79828 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.024683232000001 seconds 
+TDC memory usage: 79828 bytes 
+
+
+data/100tuples5dims5card.txtTDC time: 0.024726692999990973 seconds 
+TDC memory usage: 79828 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.006201089000001048 seconds 
+TDC memory usage: 39284 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.00674737699998218 seconds 
+TDC memory usage: 26068 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.006350281000010227 seconds 
+TDC memory usage: 24052 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.006259679999999435 seconds 
+TDC memory usage: 23932 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.004684833999988314 seconds 
+TDC memory usage: 23244 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.004646814000011545 seconds 
+TDC memory usage: 23244 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.005011008999986188 seconds 
+TDC memory usage: 23244 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.004746125999986361 seconds 
+TDC memory usage: 23244 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.004700315000008004 seconds 
+TDC memory usage: 23244 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.0049966999999924155 seconds 
+TDC memory usage: 23244 bytes 
+
+
+data/100tuples3dims3card.txtTDC time: 0.005147241999992502 seconds 
+TDC memory usage: 23244 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.006414782000007335 seconds 
+TDC memory usage: 67852 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.0063746110000124645 seconds 
+TDC memory usage: 30292 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004649723999989419 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004684233999995513 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004614342999985865 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004823695999988331 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004671423999980107 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004751625000011472 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004770065999991857 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004636174000012261 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/100tuples3dims8card.txtTDC time: 0.004604153000002498 seconds 
+TDC memory usage: 25364 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.1807504749999964 seconds 
+TDC memory usage: 277540 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.17963738799997486 seconds 
+TDC memory usage: 236980 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.18104183999997758 seconds 
+TDC memory usage: 615516 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.18511080499999366 seconds 
+TDC memory usage: 261756 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.1787732439999843 seconds 
+TDC memory usage: 255660 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.1832728960000054 seconds 
+TDC memory usage: 439476 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.18489054099998725 seconds 
+TDC memory usage: 390900 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.17970429900000795 seconds 
+TDC memory usage: 243500 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.18108119999999417 seconds 
+TDC memory usage: 242916 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.17385954600001696 seconds 
+TDC memory usage: 529612 bytes 
+
+
+data/500tuples5dims2card.txtTDC time: 0.16237710400000083 seconds 
+TDC memory usage: 273132 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.18081569699998568 seconds 
+TDC memory usage: 1299821 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.16488535300001672 seconds 
+TDC memory usage: 771980 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.16834044800000925 seconds 
+TDC memory usage: 466316 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.1535637829999814 seconds 
+TDC memory usage: 344860 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.15422457299999337 seconds 
+TDC memory usage: 529004 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.15099430199998665 seconds 
+TDC memory usage: 448428 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.15285844199999588 seconds 
+TDC memory usage: 416356 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.15089469099999064 seconds 
+TDC memory usage: 344428 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.15236636399998815 seconds 
+TDC memory usage: 373980 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.14617902599999866 seconds 
+TDC memory usage: 600004 bytes 
+
+
+data/500tuples5dims5card.txtTDC time: 0.14762704899999335 seconds 
+TDC memory usage: 415241 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.0297490130000142 seconds 
+TDC memory usage: 155444 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.02979312400000822 seconds 
+TDC memory usage: 136428 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.029649531999979217 seconds 
+TDC memory usage: 136428 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.030848250999980564 seconds 
+TDC memory usage: 136428 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.030596185999996806 seconds 
+TDC memory usage: 136428 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.031661553999981606 seconds 
+TDC memory usage: 136428 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.029550029999995786 seconds 
+TDC memory usage: 136428 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.03104417399998738 seconds 
+TDC memory usage: 136428 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.02837145099999816 seconds 
+TDC memory usage: 136428 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.030971582999995917 seconds 
+TDC memory usage: 144900 bytes 
+
+
+data/500tuples3dims3card.txtTDC time: 0.030216680999984646 seconds 
+TDC memory usage: 175164 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.03151366099999109 seconds 
+TDC memory usage: 244596 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.03155424199999857 seconds 
+TDC memory usage: 172268 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.031239716999976963 seconds 
+TDC memory usage: 162844 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.030668697999999495 seconds 
+TDC memory usage: 136556 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.03029934200000639 seconds 
+TDC memory usage: 136556 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.030413073999994822 seconds 
+TDC memory usage: 136556 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.030180109999975002 seconds 
+TDC memory usage: 136556 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.030065637999996397 seconds 
+TDC memory usage: 136556 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.023578974999992397 seconds 
+TDC memory usage: 136556 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.023938811000022042 seconds 
+TDC memory usage: 136556 bytes 
+
+
+data/500tuples3dims8card.txtTDC time: 0.023400522000002866 seconds 
+TDC memory usage: 136556 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.3609770630000071 seconds 
+TDC memory usage: 653812 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.36018848000000503 seconds 
+TDC memory usage: 641644 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.36111664500000984 seconds 
+TDC memory usage: 799716 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.36299175500002434 seconds 
+TDC memory usage: 648732 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.3601513490000059 seconds 
+TDC memory usage: 636820 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.3620660100000066 seconds 
+TDC memory usage: 792716 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.3638585889999888 seconds 
+TDC memory usage: 505772 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.3740250900000035 seconds 
+TDC memory usage: 748572 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.37093870100000004 seconds 
+TDC memory usage: 703612 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.3637024459999907 seconds 
+TDC memory usage: 552249 bytes 
+
+
+data/1000tuples5dims2card.txtTDC time: 0.35955887999998026 seconds 
+TDC memory usage: 824876 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.3731345470000065 seconds 
+TDC memory usage: 2173076 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.3734295209999914 seconds 
+TDC memory usage: 1118076 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.3441718949999881 seconds 
+TDC memory usage: 872524 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.33269488299998784 seconds 
+TDC memory usage: 1255148 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.343017126999996 seconds 
+TDC memory usage: 950780 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.34351639499999465 seconds 
+TDC memory usage: 838444 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.31229383900000585 seconds 
+TDC memory usage: 922524 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.3194665020000116 seconds 
+TDC memory usage: 685596 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.31448214400001007 seconds 
+TDC memory usage: 1155924 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.31625459200000705 seconds 
+TDC memory usage: 613596 bytes 
+
+
+data/1000tuples5dims5card.txtTDC time: 0.31055976099997906 seconds 
+TDC memory usage: 932004 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.0628546699999788 seconds 
+TDC memory usage: 299148 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.06345494899994719 seconds 
+TDC memory usage: 276284 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.060333549000006315 seconds 
+TDC memory usage: 276284 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.0648274320000155 seconds 
+TDC memory usage: 292076 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.06504626500003496 seconds 
+TDC memory usage: 295164 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.06322576600001639 seconds 
+TDC memory usage: 289652 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.06310821399995348 seconds 
+TDC memory usage: 276284 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.0644310949999749 seconds 
+TDC memory usage: 276284 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.062004336000029525 seconds 
+TDC memory usage: 276284 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.06082879799998864 seconds 
+TDC memory usage: 276284 bytes 
+
+
+data/1000tuples3dims3card.txtTDC time: 0.06308125300000711 seconds 
+TDC memory usage: 276284 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06567143500001293 seconds 
+TDC memory usage: 347756 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06415539099998568 seconds 
+TDC memory usage: 387556 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06206953800000292 seconds 
+TDC memory usage: 276524 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06230537099997946 seconds 
+TDC memory usage: 276524 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.062440992999995615 seconds 
+TDC memory usage: 276524 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06313631400001896 seconds 
+TDC memory usage: 276524 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06182988400001932 seconds 
+TDC memory usage: 276524 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06216076900000189 seconds 
+TDC memory usage: 276524 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06310839399998258 seconds 
+TDC memory usage: 276524 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06724802000002228 seconds 
+TDC memory usage: 368828 bytes 
+
+
+data/1000tuples3dims8card.txtTDC time: 0.06461879800002635 seconds 
+TDC memory usage: 311372 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 3.9960057420000226 seconds 
+TDC memory usage: 4236988 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 4.057995337999955 seconds 
+TDC memory usage: 4232508 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 4.090622246999999 seconds 
+TDC memory usage: 4232508 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 4.096570991999954 seconds 
+TDC memory usage: 4232508 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 4.0717568270000015 seconds 
+TDC memory usage: 4232508 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 3.9980583640000305 seconds 
+TDC memory usage: 4232564 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 4.0151762170000325 seconds 
+TDC memory usage: 4232564 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 3.980035178000037 seconds 
+TDC memory usage: 4232564 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 3.996086083000023 seconds 
+TDC memory usage: 4232564 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 3.9891750830000205 seconds 
+TDC memory usage: 4232564 bytes 
+
+
+data/10000tuples5dims2card.txtTDC time: 4.046789759999967 seconds 
+TDC memory usage: 4232564 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.11482743199997 seconds 
+TDC memory usage: 6033956 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.03474769799999 seconds 
+TDC memory usage: 5347148 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.0538030509999885 seconds 
+TDC memory usage: 4888388 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.046182790000046 seconds 
+TDC memory usage: 4919004 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.0521009450000065 seconds 
+TDC memory usage: 4918652 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.089868926000008 seconds 
+TDC memory usage: 4795196 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.045730773000059 seconds 
+TDC memory usage: 4826276 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.107255491000046 seconds 
+TDC memory usage: 4819900 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.144033226000033 seconds 
+TDC memory usage: 4678396 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.170177322999962 seconds 
+TDC memory usage: 4685148 bytes 
+
+
+data/10000tuples5dims5card.txtTDC time: 4.087788061999959 seconds 
+TDC memory usage: 4590276 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.6961314040000843 seconds 
+TDC memory usage: 2796412 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.7058828799999901 seconds 
+TDC memory usage: 2791932 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.7159518099999787 seconds 
+TDC memory usage: 2791988 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.7186345129999836 seconds 
+TDC memory usage: 2791932 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.7009378120000065 seconds 
+TDC memory usage: 2791988 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.6889899509999395 seconds 
+TDC memory usage: 2791932 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.7171587090000457 seconds 
+TDC memory usage: 2791932 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.7167100320000372 seconds 
+TDC memory usage: 2791988 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.6759102129999519 seconds 
+TDC memory usage: 2791932 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.6808471020000297 seconds 
+TDC memory usage: 2791932 bytes 
+
+
+data/10000tuples3dims3card.txtTDC time: 0.6918070259999922 seconds 
+TDC memory usage: 2791988 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.6960486230000242 seconds 
+TDC memory usage: 2798940 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.7235823720000099 seconds 
+TDC memory usage: 2794516 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.7093935859999192 seconds 
+TDC memory usage: 2794460 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.7207258949999868 seconds 
+TDC memory usage: 2794460 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.7228289990000576 seconds 
+TDC memory usage: 2794516 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.7197389699999803 seconds 
+TDC memory usage: 2794460 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.7061659739999868 seconds 
+TDC memory usage: 2794516 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.7010583929999257 seconds 
+TDC memory usage: 2794460 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.7061651239999946 seconds 
+TDC memory usage: 2794460 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.6985424030000331 seconds 
+TDC memory usage: 2794516 bytes 
+
+
+data/10000tuples3dims8card.txtTDC time: 0.6892792950000057 seconds 
+TDC memory usage: 2794460 bytes 
