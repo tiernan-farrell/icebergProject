@@ -74,6 +74,25 @@ button:hover {
 
 }
 
+#charts-box { 
+  display: flexbox;
+  flex: auto;
+}
+
+#charts {
+  display: flexbox;
+  flex: auto;
+  height: 100vh; 
+  color: black;
+  text-align: center;
+  align-items: center;
+  width: 50% ;
+}
+
+.line-chart { 
+  width: 500px;
+  height: 300px;
+}
 input, select{
   width: auto;
   height: 2 rem;
