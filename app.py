@@ -4,7 +4,6 @@ from Algorithms.starCube import starCube
 from Algorithms.tdc import TDC
 from Algorithms.apriori import Apriori
 from Algorithms.buc import BUC
-from numpy import partition
 import time
 from flask import Flask, request
 from flask_cors import CORS
