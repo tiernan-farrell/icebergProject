@@ -128,7 +128,7 @@ def testDataSet(fileName: str, data: list, card: int, numDims):
     
         
 # Call test dataSet with each data set in our data folder 
-dataSets = ['data/100tuples5dims2card.txt', 'data/100tuples5dims5card.txt', 'data/500tuples3dims5card.txt', 'data/500tuples6dims8card.txt', 'data/1000tuples3dims6card.txt', 'data/1000tuples5dims4card.txt', 'data/1000tuples7dims9card.txt', 'data/10000tuples3dims6card.txt', 'data/10000tuples6dims2card.txt', 'data/10000tuples8dims5card.txt']
+dataSets = ['data/100tuples5dims2card.txt', 'data/100tuples5dims5card.txt', 'data/100tuples3dims3card.txt', 'data/100tuples3dims8card.txt', 'data/500tuples5dims2card.txt', 'data/500tuples5dims5card.txt', 'data/500tuples3dims3card.txt', 'data/500tuples3dims8card.txt', 'data/1000tuples5dims2card.txt', 'data/1000tuples5dims5card.txt', 'data/1000tuples3dims3card.txt', 'data/1000tuples3dims8card.txt', 'data/10000tuples5dims2card.txt', 'data/10000tuples5dims5card.txt', 'data/10000tuples3dims3card.txt', 'data/10000tuples3dims8card.txt']
 for dataFile in dataSets:
     dims = int(dataFile.split('tuples')[1][0])
     card = int(dataFile.split('dims')[1][0])

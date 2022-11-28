@@ -27,15 +27,24 @@ def main():
     
     genData(100, 5, 2)
     genData(100, 5, 5)
-    genData(500, 3, 5)
-    genData(500, 6, 8)
-    genData(1000, 7, 9)
-    genData(1000, 3, 6)    
-    genData(1000, 5, 4)
-    genData(10000, 10, 3)
-    genData(10000, 8, 5)
-    genData(10000, 6, 2)
-    genData(10000, 3, 6)
+    genData(100, 3, 3)
+    genData(100, 3, 8)
 
+    genData(500, 5, 2)
+    genData(500, 5, 5)
+    genData(500, 3, 3)
+    genData(500, 3, 8)
+
+    genData(1000, 5, 2)
+    genData(1000, 5, 5)
+    genData(1000, 3, 3)
+    genData(1000, 3, 8)
+
+    genData(10000, 5, 2)
+    genData(10000, 5, 5)
+    genData(10000, 3, 3)
+    genData(10000, 3, 8)
+
+    
 if __name__ == "__main__": 
     main()
