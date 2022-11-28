@@ -1,6 +1,6 @@
 import React from "react";
 import Graph from "../Components/Graph";
-import { testOneTimeData, testOneMemoryData, testTwoTimeData, testTwoMemoryData, testThreeTimeData, testThreeMemoryData, testFourTimeData, testFourMemoryData, testFiveTimeData, testSixMemoryData, testSevenTimeData, testSevenMemoryData, testEightTimeData, testEightMemoryData, testNineTimeData, testNineMemoryData, testTenTimeData, testTenMemoryData } from "../graphData";
+import { testOneTimeData, testOneMemoryData, testTwoTimeData, testTwoMemoryData, testThreeTimeData, testThreeMemoryData, testFourTimeData, testFourMemoryData, testFiveTimeData, testFiveMemoryData, testSixTimeData, testSixMemoryData, testSevenTimeData, testSevenMemoryData, testEightTimeData, testEightMemoryData, testNineTimeData, testNineMemoryData, testTenTimeData, testTenMemoryData } from "../graphData";
 
 
 const testOneTime = {name: '100 Tuples, 5 Dimensions, 2 Cardinality', 
@@ -58,7 +58,7 @@ const Results = (() => {
     return (
         <div id='charts-box'>
             <Graph data={testOneTimeData} title={testOneTime}/>
-            {/* <Graph data={testOneMemoryData} title={testOneMemory}/>
+            <Graph data={testOneMemoryData} title={testOneMemory}/>
 
 
             <Graph data={testTwoTimeData} title={testTwoTime}/>
@@ -93,7 +93,7 @@ const Results = (() => {
             <Graph data={testNineMemoryData} title={testNineMemory}/> 
             
             <Graph data={testTenTimeData} title={testTenTime}/>
-            <Graph data={testTenMemoryData} title={testTenMemory}/> */}
+            <Graph data={testTenMemoryData} title={testTenMemory}/>
         </div>
     )
 })
