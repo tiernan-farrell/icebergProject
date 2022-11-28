@@ -4,6 +4,10 @@ import Navbar from './Components/Navbar';
 import Algorithms from './Pages/Algorithms';
 import About from "./Pages/About";
 import Results from "./Pages/Results";
+import HundredTuples from './Pages/HundredTuples';
+import FiveHundredTuples from './Pages/FiveHundredTuples';
+import ThousandTuples from './Pages/ThousandTuples';
+import TenThousandTuples from './Pages/TenThousandTuples';
 
 function App() {
   let Component 
@@ -14,6 +18,18 @@ function App() {
       case "/results":
         Component = Results
         break
+      case "/hundred":
+          Component = HundredTuples
+          break
+      case "/fivehundred":
+          Component = FiveHundredTuples
+          break
+      case "/thousand":
+          Component = ThousandTuples
+          break
+      case "/tenthousand":
+          Component = TenThousandTuples
+          break
       default:
       Component = Algorithms
       break

@@ -1380,4 +1380,55 @@ export const testTenMemoryData = [
 
 
 
+    export const testOneTime = {name: '100 Tuples, 5 Dimensions, 2 Cardinality', 
+    label: 'Runtime (seconds)'}
+export const testOneMemory = {name: '100 Tuples, 5 Dimensions, 2 Cardinality', 
+    label: 'Memory (bytes)'}
+
+export const testTwoTime = {name: '100 Tuples, 5 Dimensions, 5 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testTwoMemory = {name: '100 Tuples, 5 Dimensions, 5 Cardinality', 
+label: 'Memory (bytes)'}
+
+export const testThreeTime = {name: '500 Tuples, 3 Dimensions, 5 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testThreeMemory = {name: '500 Tuples, 3 Dimensions, 5 Cardinality',
+label: 'Memory (bytes)'}
+
+export const testFourTime = {name: '500 Tuples, 6 Dimensions, 8 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testFourMemory = {name: '500 Tuples, 6 Dimensions, 8 Cardinality',
+label: 'Memory (bytes)'}
+
+export const testFiveTime = {name: '1000 Tuples, 3 Dimensions, 6 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testFiveMemory = {name: '1000 Tuples, 3 Dimensions, 6 Cardinality',
+label: 'Memory (bytes)'}
+
+export const testSixTime = {name: '1000 Tuples, 5 Dimensions, 4 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testSixMemory = {name: '1000 Tuples, 5 Dimensions, 4 Cardinality',
+label: 'Memory (bytes)'}
+
+export const testSevenTime = {name: '1000 Tuples, 7 Dimensions, 9 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testSevenMemory = {name: '1000 Tuples, 7 Dimensions, 9 Cardinality',
+label: 'Memory (bytes)'}
+
+export const testEightTime = {name: '10000 Tuples, 6 Dimensions, 6 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testEightMemory = {name: '10000 Tuples, 6 Dimensions, 6 Cardinality',
+label: 'Memory (bytes)'}
+
+export const testNineTime = {name: '10000 Tuples, 8 Dimensions, 2 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testNineMemory = {name: '10000 Tuples, 8 Dimensions, 2 Cardinality',
+label: 'Memory (bytes)'}
+
+export const testTenTime = {name: '10000 Tuples, 10 Dimensions, 5 Cardinality',
+    label: 'Runtime (seconds)'}
+export const testTenMemory = {name: '10000 Tuples, 10 Dimensions, 5 Cardinality',
+label: 'Memory (bytes)'}
+
+
 

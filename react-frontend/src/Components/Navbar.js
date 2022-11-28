@@ -12,11 +12,11 @@ export default function Navbar(){
 }
 
 
-function CustomLink({ href, children, ...props}){
+export function CustomLink({ href, children, ...props}){
     const path = window.location.pathname
-    
+    console.log(path)
     return (
-        <li className={path === href ? "active" : ""}>
+        <li>
             <a href = {href} {...props}>
                 {children}
             </a>
