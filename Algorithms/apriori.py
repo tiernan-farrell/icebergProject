@@ -39,17 +39,12 @@ class Apriori:
             return {}
         rval = {}
         candCombs = []
-        sc = -1
-        for i in range(len(combs[0])):
-            if combs[0][i] == '*': 
-                sc += 1
         for indx, row in enumerate(combs):
             j = indx + 1 
             for i in range(j, len(combs)): 
                 cand = ['*' for i in range(self.dims)]
                 next = combs[i]
                 flag = True
-                starCount = len(cand)
                 for d in range(self.dims):
                     #If values between the two at dim d are not equal and neither are starts
                     if row[d] != next[d] and row[d] != '*' and next[d] != '*':
@@ -62,21 +57,14 @@ class Apriori:
                     elif row[d] == '*' or next[d] == '*':
                         if row[d] == '*':
                             cand[d] = next[d]
-                            starCount -= 1
                         else: 
                             cand[d] = row[d]
-                            starCount -= 1
                     #Else they are the same value
                     else: 
                         cand[d] = row[d]
-                    if starCount < sc:
-                        flag = False
-                        break
-
-                if flag and cand not in candCombs and starCount == sc: 
+                if flag and (cand not in candCombs): 
                     candCombs.append(cand)
                     
-
         for comb in candCombs: 
             rval[str(comb)] = 0
         return rval

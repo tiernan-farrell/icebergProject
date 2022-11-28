@@ -8,9 +8,6 @@ import Header from '../Components/Header';
 import Options from '../Components/Options';
 import Form from '../Components/Form';
 import Table from '../Components/Table';
-import Navbar from '../Components/Navbar';
-
-
 
 
 function Algorithms() {
@@ -47,7 +44,7 @@ function Algorithms() {
           let secs = Math.abs(end-start)/1000
           console.log(typeof(xhr.responseText))
           console.log(xhr.responseText.split('],'))
-          setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
+          setMetaResults("Size: " + xhr.responseText.replace('[[', '').replace(']]', '').replaceAll('],[', '!').split('!').length + "\n | Time: " + secs.toString()+ " seconds")
           setAlgoResults(xhr.responseText)
       }
   }
@@ -102,18 +99,6 @@ function Algorithms() {
     start = nowApriori.getTime()
     const url = "http://localhost:6969/apriori?minsup=" + minsup + "&numDims=" + numDims + "&card=" + card
     await xhr.open("GET", url, true)
-    xhr.send(null)
-  }
-
-  async function getStarCubeResults() { 
-    console.log("Get Buc...");
-    // eslint-disable-next-line no-undef
-    xhr = getXmlHttpRequestObject(); 
-    xhr.onreadystatechange = dataCallback; 
-    setAlgoResults("Loading")
-    const nowsstarCube = new Date()
-    start = nowsstarCube.getTime()
-    await xhr.open("GET", "http://localhost:6969/starCube", true)
     xhr.send(null)
   }
 
