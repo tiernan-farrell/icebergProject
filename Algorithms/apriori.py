@@ -48,13 +48,9 @@ class Apriori:
             for i in range(j, len(combs)): 
                 cand = ['*' for i in range(self.dims)]
                 next = combs[i]
-                # print("row = ", row)
-                # print("next = ", next)
                 flag = True
                 starCount = len(cand)
                 for d in range(self.dims):
-                    # print("row[", d, "] = ", row[d]) 
-                    # print("next[", d,"] = ", next[d])
                     #If values between the two at dim d are not equal and neither are starts
                     if row[d] != next[d] and row[d] != '*' and next[d] != '*':
                         flag = False
@@ -172,15 +168,15 @@ class Apriori:
         res = []
         for line in self.outList: 
             intermediate = []
-            print("line1 ", line)
+            #print("line1 ", line)
             line = line.replace("[", "").replace("]", "").replace(":", ", ").replace('\'',"")
             line = line.split(', ')
-            print("line2 ", line)
+            #print("line2 ", line)
             for num in line: 
                 if num == '*':
                     intermediate.append("*")
                 else:
                     intermediate.append(int(num))
-            print(line)
+            #print(line)
             res.append(intermediate)
         return res

@@ -1,0 +1,881 @@
+
+
+data/100tuples5dims2card.txtApriori time: 0.01953827899998828 seconds 
+Apriori memory usage: 21782 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.020443487000022742 seconds 
+Apriori memory usage: 12910 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.020242813000010074 seconds 
+Apriori memory usage: 12748 bytes 
+
+
+
+data/100tuples5dims2card.txtApriori time: 0.015732300999985682 seconds 
+Apriori memory usage: 8888 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.015293446999976368 seconds 
+Apriori memory usage: 8888 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.011697983000004797 seconds 
+Apriori memory usage: 4675 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.00034233700000640965 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.0004215490000092359 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.00040503799999669354 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.0006529430000057346 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.0005867110000110642 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.1628526739999927 seconds 
+Apriori memory usage: 83866 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.01937689700000078 seconds 
+Apriori memory usage: 60568 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.012092552000012802 seconds 
+Apriori memory usage: 14846 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0007009640000035233 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0010588210000150866 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0006561040000008234 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0007098149999933412 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0007704760000137867 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.000496749999996382 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.000564790999987963 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.00048504999998044696 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.031540649999982406 seconds 
+Apriori memory usage: 19221 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.03072832400002312 seconds 
+Apriori memory usage: 18396 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.024353845000007368 seconds 
+Apriori memory usage: 14852 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.021028120000011086 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.021499320000003763 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.020474591000009923 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.020421838999993724 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.01997589100000141 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.020877038999998376 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.018525971999991953 seconds 
+Apriori memory usage: 10099 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.014466522999981635 seconds 
+Apriori memory usage: 4225 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 2.4807599069999924 seconds 
+Apriori memory usage: 325342 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.30131550799998763 seconds 
+Apriori memory usage: 238602 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.14504029799999785 seconds 
+Apriori memory usage: 238578 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.14726144700000532 seconds 
+Apriori memory usage: 238578 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.148003808999988 seconds 
+Apriori memory usage: 238578 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.1426227980000192 seconds 
+Apriori memory usage: 226291 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.104257060000009 seconds 
+Apriori memory usage: 111494 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.0680155849999835 seconds 
+Apriori memory usage: 7375 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.0012793120000083036 seconds 
+Apriori memory usage: 1309 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.0011628190000010363 seconds 
+Apriori memory usage: 1148 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.0012808120000045164 seconds 
+Apriori memory usage: 1148 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.06186642200000847 seconds 
+Apriori memory usage: 30817 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.06309590499998308 seconds 
+Apriori memory usage: 30649 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.060780445999995436 seconds 
+Apriori memory usage: 30041 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.04327498300000343 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.04003795899998863 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.04332664300000033 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.039042273000006844 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.04073763099998473 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.040466595999987476 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.039797061999991 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.03951732799998808 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.21368393500000593 seconds 
+Apriori memory usage: 54679 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.21335826399999291 seconds 
+Apriori memory usage: 54703 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.21116855099998588 seconds 
+Apriori memory usage: 54679 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.2154143070000032 seconds 
+Apriori memory usage: 54679 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.2095881750000217 seconds 
+Apriori memory usage: 54679 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.2185768150000058 seconds 
+Apriori memory usage: 52709 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.17915942599998402 seconds 
+Apriori memory usage: 43115 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.1474137300000109 seconds 
+Apriori memory usage: 37153 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.1474071810000055 seconds 
+Apriori memory usage: 37153 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.14472296099998516 seconds 
+Apriori memory usage: 37153 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.14557628600002204 seconds 
+Apriori memory usage: 37153 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 8.199084330999995 seconds 
+Apriori memory usage: 598823 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 5.193383479999994 seconds 
+Apriori memory usage: 517187 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4402504300000203 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4302169590000062 seconds 
+Apriori memory usage: 449574 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4295899829999996 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4294616059999896 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4305878590000134 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4383837729999982 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4319214909999687 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4374777390000304 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4022132539999461 seconds 
+Apriori memory usage: 415632 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.40940355700001874 seconds 
+Apriori memory usage: 34192 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.39669090299997833 seconds 
+Apriori memory usage: 34048 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4411367860000155 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.40513016400001334 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.41627632800003767 seconds 
+Apriori memory usage: 35928 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4038636360000396 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4101828860000296 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4030848419999984 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4044354210000165 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4085558630000037 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4097871120000036 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4423181630000386 seconds 
+Apriori memory usage: 23098 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.435994456000003 seconds 
+Apriori memory usage: 22954 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.3830723660000217 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4219723950000116 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.3982063330000187 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.434051721000003 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.424528658999975 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.3949795600000243 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.372034979000034 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.3980301309999845 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.370472987000028 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.654516704999992 seconds 
+Apriori memory usage: 290406 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.9047650530000055 seconds 
+Apriori memory usage: 287662 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.827491512999927 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.760623583000097 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.7075806979999015 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.685642377000022 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.681600342000024 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.719297325999946 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.61002342300003 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.607778516000053 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.735135380999964 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.019412025000065114 seconds 
+Apriori memory usage: 21782 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.01943696400007866 seconds 
+Apriori memory usage: 12910 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.018703995999885592 seconds 
+Apriori memory usage: 12748 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.015265974999920218 seconds 
+Apriori memory usage: 8888 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.015534297999920454 seconds 
+Apriori memory usage: 8888 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.010929903000032937 seconds 
+Apriori memory usage: 4675 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.0003230529998745624 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.0003092129998094606 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.0003002820001256623 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.0005020940000122209 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims2card.txtApriori time: 0.00039425399995707266 seconds 
+Apriori memory usage: 919 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.14779565799994998 seconds 
+Apriori memory usage: 83866 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.019134701999973913 seconds 
+Apriori memory usage: 60568 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.01211957500004246 seconds 
+Apriori memory usage: 14846 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0003766840000025695 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0003808820001722779 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0003484439998828748 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0003503739999359823 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.00032361300009142724 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0005172749999928783 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.0003733139999440027 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/100tuples5dims5card.txtApriori time: 0.00025723299995661364 seconds 
+Apriori memory usage: 1079 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.03071058099999391 seconds 
+Apriori memory usage: 19221 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.028862352999794894 seconds 
+Apriori memory usage: 18396 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.023109887999908096 seconds 
+Apriori memory usage: 14852 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.020660034999991694 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.0205471540000417 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.019946238000102312 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.019854118000012022 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.019950317999928302 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.02035946299997704 seconds 
+Apriori memory usage: 12887 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.018066469999894252 seconds 
+Apriori memory usage: 10099 bytes 
+
+
+data/500tuples3dims5card.txtApriori time: 0.014060933000109799 seconds 
+Apriori memory usage: 4225 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 2.3507765140000174 seconds 
+Apriori memory usage: 325342 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.289707953000061 seconds 
+Apriori memory usage: 238602 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.145069021999916 seconds 
+Apriori memory usage: 238578 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.14544652400013547 seconds 
+Apriori memory usage: 238578 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.1473080610001034 seconds 
+Apriori memory usage: 238578 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.14122397300002376 seconds 
+Apriori memory usage: 226291 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.10200490500005799 seconds 
+Apriori memory usage: 111494 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.0670972770001299 seconds 
+Apriori memory usage: 7375 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.001076159000149346 seconds 
+Apriori memory usage: 1309 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.0011370810000244091 seconds 
+Apriori memory usage: 1148 bytes 
+
+
+data/500tuples6dims8card.txtApriori time: 0.0011610609999479493 seconds 
+Apriori memory usage: 1148 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.06073711799990633 seconds 
+Apriori memory usage: 30817 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.059766488999912326 seconds 
+Apriori memory usage: 30649 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.0565523079999366 seconds 
+Apriori memory usage: 30041 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.04047602899981939 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.038236267000002044 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.039875691999895935 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.04038777699997809 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.038491568999916126 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.040362287000107244 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.03815000700001292 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples3dims6card.txtApriori time: 0.04344370599983449 seconds 
+Apriori memory usage: 21804 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.19887872599997536 seconds 
+Apriori memory usage: 54679 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.2062864519998584 seconds 
+Apriori memory usage: 54703 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.20217092200005027 seconds 
+Apriori memory usage: 54679 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.2003892249999808 seconds 
+Apriori memory usage: 54679 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.20132291000004443 seconds 
+Apriori memory usage: 54679 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.19428196299986666 seconds 
+Apriori memory usage: 52709 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.16737641200006692 seconds 
+Apriori memory usage: 43115 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.1475706670000818 seconds 
+Apriori memory usage: 37153 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.14662067800009027 seconds 
+Apriori memory usage: 37153 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.14002926500006652 seconds 
+Apriori memory usage: 37153 bytes 
+
+
+data/1000tuples5dims4card.txtApriori time: 0.147063849999995 seconds 
+Apriori memory usage: 37153 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 7.953831816000047 seconds 
+Apriori memory usage: 598823 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 5.019838913000058 seconds 
+Apriori memory usage: 517187 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4482112059999963 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4445045900001787 seconds 
+Apriori memory usage: 449574 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.436358865000102 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4385777859999962 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.43027074200017523 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.4374988649999523 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.43294178399992234 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.43458953999993355 seconds 
+Apriori memory usage: 449358 bytes 
+
+
+data/1000tuples7dims9card.txtApriori time: 0.3980881880002016 seconds 
+Apriori memory usage: 415632 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.40323667400002705 seconds 
+Apriori memory usage: 34192 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.39195347999998376 seconds 
+Apriori memory usage: 34048 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4014660999998796 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4047351129997878 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4107519780000075 seconds 
+Apriori memory usage: 35928 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.39942914399989604 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.39810646799992355 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.41663215500011574 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.3978486440000779 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.3949571339999238 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples3dims6card.txtApriori time: 0.4015592470000229 seconds 
+Apriori memory usage: 34024 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4179346869998426 seconds 
+Apriori memory usage: 23098 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4422370529998716 seconds 
+Apriori memory usage: 22954 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.410994370000026 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4382307020000553 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4311942540000473 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4006737180000073 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.388366860000133 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4169532969999636 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.440956829000015 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.4613034640001388 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples6dims2card.txtApriori time: 2.5385559599999397 seconds 
+Apriori memory usage: 22930 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.60094303599999 seconds 
+Apriori memory usage: 290406 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.711252630999979 seconds 
+Apriori memory usage: 287662 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.559005854000134 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.802128446999859 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.632170631000008 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.6389909290001015 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.701820224999892 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.6024447100001 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.548213416999943 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.5528323449998425 seconds 
+Apriori memory usage: 287638 bytes 
+
+
+data/10000tuples8dims5card.txtApriori time: 6.591569143000015 seconds 
+Apriori memory usage: 287638 bytes 
