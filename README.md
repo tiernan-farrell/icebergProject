@@ -51,9 +51,9 @@ Use:
     ```$python3 app.py``` 
 in the directory of the main project to start the python backend server 
 
-To start the frontend server, use: 
-    `$cd react-frontend`
-    `$npm install` 
+To start the frontend server, use:
+    `$npm install`
+    `$cd react-frontend` 
     `$npm start`
 
 in the /frontend directory. Navigate to the server that was started at 

@@ -9,11 +9,6 @@ export default function About(){
             <p>Before the web interface is built and real data sets are found/created, the algorithms
             will be implemented and tested using python generated data in the form of a .txt file.  
             The data will be pre-processed and the algorithms will be implemented using the processed data.</p>
-            <h3> Data Generation: </h3>
-            <p><code>dataGenerator.py</code> generates 10000 tuples of data where each 
-            tuples contains 5 random integers from 0-9. using the command
-            <pre><code><span class="hljs-selector-tag">python3</span> <span class="hljs-selector-tag">dataGenerator</span><span class="hljs-selector-class">.py</span> &gt; <span class="hljs-selector-tag">data</span><span class="hljs-selector-class">.txt</span></code></pre>
-            pipes the ouptut from the data generator into a usable text file</p>
             <h1 id="dependencies">Dependencies</h1>
             <pre><code> -<span class="ruby">python version <span class="hljs-number">3.10</span>.<span class="hljs-number">6</span>
             </span>    -<span class="ruby">pip version <span class="hljs-number">22.3</span>
@@ -26,11 +21,18 @@ export default function About(){
             <p>To run the front end application, start a pyhon server and a http-server 
             use: &nbsp;
                 <code>$python3 buc.py</code> 
-            &nbsp; in the directory of the main project to start the python backend server 
+            &nbsp; in the directory of the main project to start the p	Future Work 
+
+In the next steps, we will find real data sets with varying size, cardinality and distributions to use.  Also, the front-end will be expanded, and better styling will be implemented. 
+
+Next, we will spend time developing our metric logs. This section will check the performance and memory costs of our algorithms. In this section we should do extensive testing to confirm the integrity and validity of our research and our own code. We should also do extensive logging of our findings in this section.  
+
+Finally, we will complete our paper and record our video as we wrap up our front-end. ython backend server 
             </p>
             <p>To start the frontend server, use: &nbsp; 
-                <code>$cd react-frontend</code> &nbsp;
-                <code>$npm start</code> &nbsp;
+                <code>npm install</code>
+                <code>cd react-frontend</code> &nbsp;
+                <code>npm start</code> &nbsp;
             in the /frontend directory. Navigate to the server that was started at 
                 <code>http://localhost:3000</code>.
                 &nbsp; From here you can click the buttons to show you the data used and then the buc iceberg cube. </p>
