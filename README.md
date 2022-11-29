@@ -11,7 +11,11 @@ where a user can choose between a set of iceberg cubing
 
 algorithms and examine the difference in execution time for
 
-different sets of data.
+different sets of data.  Also included are time and memory results
+
+of running different data sets with varying number of tuples,
+
+dimensionality, cardinality, and minimum suppport.
 
   
 
@@ -21,7 +25,7 @@ different sets of data.
 
 Before the web interface is built and real data sets are
 
-found/created, the algorithms will be implemented and tested
+found/created, the algorithms were implemented and tested
 
 using python generated data in the form of a .txt file.
 
@@ -29,21 +33,6 @@ The data will be pre-processed and the algorithms will be
 
 implemented using the processed data.
 
-  
-
-- Data Generation:
-
-`dataGenerator.py` generates 10000 tuples of data where each
-
-tuples contains 5 random integers from 0-9. using the command
-
-```
-
-python3 dataGenerator.py > data.txt
-
-```
-
-pipes the ouptut from the data generator into a usable text file
 
 
 # Dependencies 
@@ -68,7 +57,10 @@ To start the frontend server, use:
 
 in the /frontend directory. Navigate to the server that was started at 
     `http://localhost:3000`
-From here you can click the buttons to show you the data used and then the buc iceberg cube. 
+From here you can click the buttons to show you the data used and then the buc iceberg cube.
+The About page holds a similar project description.
+The Test Results page holds the test and memory usage results of running data groups of different size, dimensionality,  and cardinality as the minimum support varies.  More about that is detailed below under 'Testing'
+
 
 # Algorithms
 
@@ -101,8 +93,7 @@ Where the number next to the region in the lattice represents the order it is pr
 
 BUC climbs the lattice recursively then decends downward. Notice all of dimension A was processed before dimension B starts. 
 
-  
-
+ 
 ## Top-Down Computation
 - Top Down Computation computes the iceberg cube in top down fashion of the lattice. 
 If there are 4 dimensions ABCD, TDC loops over the input first counting combinations of 
@@ -110,8 +101,21 @@ ABCD, ABC, AB and A. Then it continues looping checking regions in the order: AB
 - With n dimensions there are `2^n-1` combinations and TDC makes as many passes over the input. 
 - Pruning can happen if no attribute value combinations are found frequent.
 - Traverses lattice the opposite of BUC with the same recursive and iterative structure. 
+
+
 ## APRIORI
 - Apriori functions utilize candidate combinations in order to prune useless attribute value combinations.  It follows the Apriori Property which states “All non-empty subsets of a frequent itemset must be frequent”.  Therefore, for a combination of attribute values to satisfy the minimum support requirement, all subsets of that combination must also satisfy minimum support.  Apriori uses this property by only allowing candidate combinations that are combinations of frequent attribute value combinations.  Apriori starts looking at one value on the first pass of the data, then considers all candidate combinations of the frequent single values and looks at the two value combinations on the second pass of the data.  The data is continually passed until either all combinations are pruned or the number of values in the candidate combinations after being passed through is equal the original dimensionality of the data.
 - This can best be seen with the example below:
 <img width="900" alt="image" src="images\Apriori.png">
 - Supposing the input table 4, on the first pass of data, Apriori determines that single values in Table 5 are frequent.  Table 6 shows the candidate combinations that result from the combinations in Table 5.  The candidate combinations are then passed through, resulting in the cominbations and counts seen in Table 7.  3-set candidates are then generated for the candidate combinations as seen in Table 8, and then passed through resulting in Table 9.  Since {a2, c2, d2} is not frequent no more candidate combinations can be derived, so the algorithm finishes executing.
+
+## Testing and Results
+Testing was completed on all of the algorithms.  Various number of tuples, dimensionality, and cardinality were used to see how algorithm time and memory usage varied as the minimum support varied.  These results displayed some interesting results, which can all be found under the Test Results page on the front end.  The results displayed the following trends:
+- TDC consistently performed the slowest, followed by Apriori, followed by BUC
+- TDC consistently utilized the most memory, followed by BUC, followed by Apriori
+- For the most part, as the number of tuples increased the memory usage and time for the algorithms increased
+- For the most part, as dimensionality and cardanality increased the memory usage and time for the algorithms increased
+
+Almost all of these results were expected by us, however, we expected TDC to outperform Apriori in time and memory usage.  This is likely due to our form of implementation and having had more time we would have looked into improving our TDC implementation.
+
+
