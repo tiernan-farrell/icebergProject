@@ -898,67 +898,67 @@ export const testSevenTimeData = [
 export const testSevenMemoryData = [
     {
         name: '1',
-        buc: .19336,
+        buc: 0.019336,
         tdc: .155444,
         apriori: .010984,
     },
     {
         name: '10',
-        buc: .19336,
+        buc: 0.019336,
         tdc: .136428,
         apriori: .010984,
     },
     {
         name: '20',
-        buc: .18088,
+        buc: 0.018088,
         tdc: .136428,
         apriori: .010984,
     },
     {
         name: '30',
-        buc: .17480,
+        buc: 0.017480,
         tdc: .136428,
         apriori: .010984,
     },
     {
         name: '40',
-        buc: .17416,
+        buc: 0.017416,
         tdc: .136428,
         apriori: .010984,
     },
     {
         name: '50',
-        buc: .17032,
+        buc: 0.017032,
         tdc: .136428,
         apriori: .010216,
     },
     {
         name: '60',
-        buc: .16008,
+        buc: 0.016008,
         tdc: .136428,
         apriori: .005860,
     },
     {
         name: '70',
-        buc: .15496,
+        buc: 0.015496,
         tdc: .136428,
         apriori: .005600,
     },
     {
         name: '80',
-        buc: .15432,
+        buc: 0.015432,
         tdc: .136428,
         apriori: .005600,
     },
     {
         name: '90',
-        buc: .15432,
+        buc: 0.015432,
         tdc: .144900,
         apriori: .005600,
     },
     {
         name: '100',
-        buc: .15432,
+        buc: 0.015432,
         tdc: .175164,
         apriori: .005600,
     }
@@ -2207,84 +2207,84 @@ export const testSixteenMemoryData = [
     }
     ];
 
-    export const testOneTime = {name: '100 Tuples, 3 Dimensions, 3 Cardinality', 
+    export const testOneTime = {name: '100 Tuples, 5 Dimensions, 2 Cardinality', 
     label: 'Runtime (seconds)'}
-export const testOneMemory = {name: '100 Tuples, 3 Dimensions, 3 Cardinality', 
+export const testOneMemory = {name: '100 Tuples, 5 Dimensions, 2 Cardinality', 
 label: 'Memory (mb)'}
 
-export const testTwoTime = {name: '100 Tuples, 3 Dimensions, 8 Cardinality',
+export const testTwoTime = {name: '100 Tuples, 5 Dimensions, 5 Cardinality',
     label: 'Runtime (seconds)'}
-export const testTwoMemory = {name: '100 Tuples, 3 Dimensions, 8 Cardinality', 
+export const testTwoMemory = {name: '100 Tuples, 5 Dimensions, 5 Cardinality', 
 label: 'Memory (mb)'}
 
-export const testThreeTime = {name: '100 Tuples, 5 Dimensions, 2 Cardinality',
+export const testThreeTime = {name: '100 Tuples, 3 Dimensions, 3 Cardinality',
     label: 'Runtime (seconds)'}
-export const testThreeMemory = {name: '100 Tuples, 5 Dimensions, 2 Cardinality',
+export const testThreeMemory = {name: '100 Tuples, 3 Dimensions, 3 Cardinality',
 label: 'Memory (mb)'}
 
-export const testFourTime = {name: '100 Tuples, 5 Dimensions, 2 Cardinality',
+export const testFourTime = {name: '100 Tuples, 3 Dimensions, 8 Cardinality',
     label: 'Runtime (seconds)'}
-export const testFourMemory = {name: '100 Tuples, 5 Dimensions, 2 Cardinality',
+export const testFourMemory = {name: '100 Tuples, 3 Dimensions, 8 Cardinality',
 label: 'Memory (mb)'}
 
-export const testFiveTime = {name: '500 Tuples, 3 Dimensions, 3 Cardinality',
+export const testFiveTime = {name: '500 Tuples, 5 Dimensions, 2 Cardinality',
     label: 'Runtime (seconds)'}
-export const testFiveMemory = {name: '500 Tuples, 3 Dimensions, 3 Cardinality',
+export const testFiveMemory = {name: '500 Tuples, 5 Dimensions, 2 Cardinality',
 label: 'Memory (mb)'}
 
-export const testSixTime = {name: '500 Tuples, 3 Dimensions, 8 Cardinality',
+export const testSixTime = {name: '500 Tuples, 5 Dimensions, 5 Cardinality',
     label: 'Runtime (seconds)'}
-export const testSixMemory = {name: '500 Tuples, 3 Dimensions, 8 Cardinality',
+export const testSixMemory = {name: '500 Tuples, 5 Dimensions, 5 Cardinality',
 label: 'Memory (mb)'}
 
-export const testSevenTime = {name: '500 Tuples, 5 Dimensions, 2 Cardinality',
+export const testSevenTime = {name: '500 Tuples, 3 Dimensions, 3 Cardinality',
     label: 'Runtime (seconds)'}
-export const testSevenMemory = {name: '500 Tuples, 5 Dimensions, 2 Cardinality',
+export const testSevenMemory = {name: '500 Tuples, 3 Dimensions, 3 Cardinality',
 label: 'Memory (mb)'}
 
-export const testEightTime = {name: '500 Tuples, 5 Dimensions, 5 Cardinality',
+export const testEightTime = {name: '500 Tuples, 3 Dimensions, 8 Cardinality',
     label: 'Runtime (seconds)'}
-export const testEightMemory = {name: '500 Tuples, 5 Dimensions, 5 Cardinality',
+export const testEightMemory = {name: '500 Tuples, 3 Dimensions, 8 Cardinality',
 label: 'Memory (mb)'}
 
-export const testNineTime = {name: '1000 Tuples, 3 Dimensions, 3 Cardinality',
+export const testNineTime = {name: '1000 Tuples, 5 Dimensions, 2 Cardinality',
     label: 'Runtime (seconds)'}
-export const testNineMemory = {name: '1000 Tuples, 3 Dimensions, 3 Cardinality',
+export const testNineMemory = {name: '1000 Tuples, 5 Dimensions, 2 Cardinality',
 label: 'Memory (mb)'}
 
-export const testTenTime = {name: '1000 Tuples, 3 Dimensions, 8 Cardinality',
+export const testTenTime = {name: '1000 Tuples, 5 Dimensions, 5 Cardinality',
     label: 'Runtime (seconds)'}
-export const testTenMemory = {name: '1000 Tuples, 3 Dimensions, 8 Cardinality',
+export const testTenMemory = {name: '1000 Tuples, 5 Dimensions, 5 Cardinality',
 label: 'Memory (mb)'}
 
-export const testElevenTime = {name: '1000 Tuples, 5 Dimensions, 2 Cardinality',
+export const testElevenTime = {name: '1000 Tuples, 3 Dimensions, 3 Cardinality',
     label: 'Runtime (seconds)'}
-export const testElevenMemory = {name: '1000 Tuples, 5 Dimensions, 2 Cardinality',
+export const testElevenMemory = {name: '1000 Tuples, 3 Dimensions, 3 Cardinality',
 label: 'Memory (mb)'}
 
-export const testTwelveTime = {name: '1000 Tuples, 5 Dimensions, 5 Cardinality',
+export const testTwelveTime = {name: '1000 Tuples, 3 Dimensions, 8 Cardinality',
     label: 'Runtime (seconds)'}
-export const testTwelveMemory = {name: '1000 Tuples, 5 Dimensions, 5 Cardinality',
+export const testTwelveMemory = {name: '1000 Tuples, 3 Dimensions, 8 Cardinality',
 label: 'Memory (mb)'}
 
-export const testThirteenTime = {name: '10000 Tuples, 3 Dimensions, 3 Cardinality',
+export const testThirteenTime = {name: '10000 Tuples, 5 Dimensions, 2 Cardinality',
     label: 'Runtime (seconds)'}
-export const testThirteenMemory = {name: '10000 Tuples, 3 Dimensions, 3 Cardinality',
+export const testThirteenMemory = {name: '10000 Tuples, 5 Dimensions, 2 Cardinality',
 label: 'Memory (mb)'}
 
-export const testFourteenTime = {name: '10000 Tuples, 3 Dimensions, 8 Cardinality',
+export const testFourteenTime = {name: '10000 Tuples, 5 Dimensions, 5 Cardinality',
     label: 'Runtime (seconds)'}
-export const testFourteenMemory = {name: '10000 Tuples, 3 Dimensions, 8 Cardinality',
+export const testFourteenMemory = {name: '10000 Tuples, 5 Dimensions, 5 Cardinality',
 label: 'Memory (mb)'}
 
-export const testFifteenTime = {name: '10000 Tuples, 5 Dimensions, 2 Cardinality',
+export const testFifteenTime = {name: '10000 Tuples, 3 Dimensions, 3 Cardinality',
     label: 'Runtime (seconds)'}
-export const testFifteenMemory = {name: '10000 Tuples, 5 Dimensions, 2 Cardinality',
+export const testFifteenMemory = {name: '10000 Tuples, 3 Dimensions, 3 Cardinality',
 label: 'Memory (mb)'}
 
-export const testSixteenTime = {name: '10000 Tuples, 5 Dimensions, 5 Cardinality',
+export const testSixteenTime = {name: '10000 Tuples, 3 Dimensions, 8 Cardinality',
     label: 'Runtime (seconds)'}
-export const testSixteenMemory = {name: '10000 Tuples, 5 Dimensions, 5 Cardinality',
+export const testSixteenMemory = {name: '10000 Tuples, 3 Dimensions, 8 Cardinality',
 label: 'Memory (mb)'}
 
 
