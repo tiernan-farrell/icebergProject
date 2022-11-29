@@ -1,6 +1,5 @@
 #from crypt import methods
 import random
-from Algorithms.starCube import starCube
 from Algorithms.tdc import TDC
 from Algorithms.apriori import Apriori
 from Algorithms.buc import BUC
