@@ -48,11 +48,12 @@ implemented using the processed data.
 
 To run the front end application, start a pyhon server and a http-server 
 Use:
-    ```$python3 buc.py``` 
+    ```$python3 app.py``` 
 in the directory of the main project to start the python backend server 
 
 To start the frontend server, use: 
-    `$cd react-frontend` 
+    `$cd react-frontend`
+    `$npm install` 
     `$npm start`
 
 in the /frontend directory. Navigate to the server that was started at 

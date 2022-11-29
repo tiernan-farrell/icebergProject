@@ -1,6 +1,5 @@
 from Algorithms.apriori import Apriori
 from Algorithms.buc import BUC
-from Algorithms.starCube import starCube
 from Algorithms.tdc import TDC
 import time
 import tracemalloc
@@ -105,21 +104,6 @@ def testDataSet(fileName: str, data: list, card: int, numDims):
         # f.write('The average CPU usage is: ', convert_to_percent(psutil.getloadavg()))
         print('*List printed to file TDC_Results.txt*')
         tracemalloc.stop()
-            
-        # Star Cubing    
-        # scStart = time.perf_counter()
-        # star = starCube(data, minsup)
-        # star.generateCube()
-        # scEnd = time.perf_counter()
-        # scTime = scEnd - scStart
-        # f = open('results/StarCube_Results.txt', 'a')
-        # f.write(fileName, '\n\n')
-        # f.write('Star-Cube time: ' , scTime , '\n')
-        # f.write('Star-Cube memory usage: ', tracemalloc.str(get_traced_memory()[1],) '\n')
-        # # f.write('The average CPU usage is: ', convert_to_percent(psutil.getloadavg()))
-        # f.write('List: \n' , starCube_results)
-        # print('*List printed to file StarCube_Results.txt*')
-        # tracemalloc.stop()
         
         if minsup == 1: 
             minsup = 10

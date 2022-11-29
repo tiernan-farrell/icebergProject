@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useEffect } from 'react';
 import { useState } from 'react';
-import './Algorithms.css';
+
 import Button from '../Components/Button';
 import Header from '../Components/Header';
 import Options from '../Components/Options';
@@ -48,19 +48,6 @@ function Algorithms() {
           setAlgoResults(xhr.responseText)
       }
   }
-  function dataCallbackGenerateData() {
-    // Check response is ready or not
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        console.log("User data received!");
-        const now2 = new Date()
-        const end = now2.getTime()
-        // eslint-disable-next-line no-undef
-        let secs = Math.abs(end-start)/1000
-        setMetaResults("Size: " + xhr.responseText.split("\",\"").length + "\n | Time: " + secs.toString()+ " seconds")
-        setAlgoResults(xhr.responseText)
-
-    }
-}
 
   async function getBucResults() { 
     console.log("Get Buc...");
@@ -102,27 +89,12 @@ function Algorithms() {
     xhr.send(null)
   }
 
-
-  async function getRunTimes() { 
-    console.log("Get Run Times");
-    // eslint-disable-next-line no-undef
-    xhr = getXmlHttpRequestObject(); 
-    xhr.onreadystatechange = dataCallback; 
-    setAlgoResults("Loading")
-    const nowsgetComputationTimes = new Date()
-    start = nowsgetComputationTimes.getTime()
-    await xhr.open("GET", "http://localhost:6969/getComputationTimes", true)
-    xhr.send(null)
-  }
-
-
-
   async function generateData() { 
     console.log("Generating data");
     // eslint-disable-next-line no-undef
     xhr = getXmlHttpRequestObject(); 
     setAlgoResults("Loading")
-    xhr.onreadystatechange = dataCallbackGenerateData; 
+    xhr.onreadystatechange = dataCallback; 
     const nowGenerateData = new Date()
     start = nowGenerateData.getTime()
     const s = "?numTuples=" + numTuples + "&numDims=" + numDims + "&card=" + card
