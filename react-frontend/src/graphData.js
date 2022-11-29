@@ -1380,144 +1380,6 @@ export const testTenMemoryData = [
 export const testElevenTimeData = [
     {
         name: '1',
-        buc: 0.04941011599999001,
-        tdc: 0.3731345470000065,
-        apriori: 21.558250697000005,
-    },
-    {
-        name: '10',
-        buc: 0.021204217000047265,
-        tdc: 0.3734295209999914,
-        apriori: 1.7429547790000015,
-    },
-    {
-        name: '20',
-        buc: 0.016390021000006527,
-        tdc: 0.3441718949999881,
-        apriori: 1.2981260319999706,
-    },
-    {
-        name: '30',
-        buc: 0.016527392999989843,
-        tdc: 0.33269488299998784,
-        apriori: 1.2006725010000423,
-    },
-    {
-        name: '40',
-        buc: 0.013267800999983592,
-        tdc: 0.343017126999996,
-        apriori: 0.43321192199999814,
-    },
-    {
-        name: '50',
-        buc: 0.009283068000002004,
-        tdc: 0.34351639499999465,
-        apriori: 0.2159823559999836,
-    },
-    {
-        name: '60',
-        buc: 0.008882271000004494,
-        tdc: 0.31229383900000585,
-        apriori: 0.13878394800002525,
-    },
-    {
-        name: '70',
-        buc: 0.009183715999995457,
-        tdc: 0.3194665020000116,
-        apriori: 0.1410370240000134,
-    },
-    {
-        name: '80',
-        buc: 0.008727779000025748,
-        tdc: 0.31448214400001007,
-        apriori: 0.1403928329999644,
-    },
-    {
-        name: '90',
-        buc: 0.008985233000032622,
-        tdc: 0.31625459200000705,
-        apriori: 0.14352703299999803,
-    },
-    {
-        name: '100',
-        buc: 0.008643267000024935,
-        tdc: 0.31055976099997906,
-        apriori: 0.13990811500002565,
-    }
-    ];
-
-export const testElevenMemoryData = [
-    {
-        name: '1',
-        buc: .811788,
-        tdc: 2.173076,
-        apriori: 2.322919,
-    },
-    {
-        name: '10',
-        buc: .126404,
-        tdc: 1.118076,
-        apriori: 1.090275,
-    },
-    {
-        name: '20',
-        buc: .070292,
-        tdc: .872524,
-        apriori: 1.082283,
-    },
-    {
-        name: '30',
-        buc: .069252,
-        tdc: 1.255148,
-        apriori: 1.074233,
-    },
-    {
-        name: '40',
-        buc: .050660,
-        tdc: .950780,
-        apriori: .592039,
-    },
-    {
-        name: '50',
-        buc: .034708,
-        tdc: .838444,
-        apriori: .060594,
-    },
-    {
-        name: '60',
-        buc: .033044,
-        tdc: .922524,
-        apriori: .060594,
-    },
-    {
-        name: '70',
-        buc: .033044,
-        tdc: .685596,
-        apriori: .060594,
-    },
-    {
-        name: '80',
-        buc: .033044,
-        tdc: 1.155924,
-        apriori: .060594,
-    },
-    {
-        name: '90',
-        buc: .033044,
-        tdc: .613596,
-        apriori: .060594,
-    },
-    {
-        name: '100',
-        buc: .033044,
-        tdc: .932004,
-        apriori: .060594,
-    }
-    ];
-
-export const testTwelveTimeData = [
-    {
-        name: '1',
         buc: 0.005480476999991879,
         tdc: 0.0628546699999788,
         apriori: 0.05218445000002703,
@@ -1584,76 +1446,76 @@ export const testTwelveTimeData = [
     }
     ];
 
-export const testTwelveMemoryData = [
+export const testElevenMemoryData = [
     {
         name: '1',
-        buc: .034424,
-        tdc: .299148,
-        apriori: .011261,
+        buc: 0.034424,
+        tdc: 0.299148,
+        apriori: 0.011261,
     },
     {
         name: '10',
-        buc: .034424,
-        tdc: .276284,
-        apriori: .011261,
+        buc: 0.034424,
+        tdc: 0.276284,
+        apriori: 0.011261,
     },
     {
         name: '20',
-        buc: .034424,
-        tdc: .276284,
-        apriori: .011261,
+        buc: 0.034424,
+        tdc: 0.276284,
+        apriori: 0.011261,
     },
     {
         name: '30',
-        buc: .034232,
-        tdc: .292076,
-        apriori: .011261,
+        buc: 0.034232,
+        tdc: 0.292076,
+        apriori: 0.011261,
     },
     {
         name: '40',
-        buc: .033112,
-        tdc: .295164,
-        apriori: .011261,
+        buc: 0.033112,
+        tdc: 0.295164,
+        apriori: 0.011261,
     },
     {
         name: '50',
-        buc: .032568,
-        tdc: .289652,
-        apriori: .011261,
+        buc: 0.032568,
+        tdc: 0.289652,
+        apriori: 0.011261,
     },
     {
         name: '60',
-        buc: .032504,
-        tdc: .276284,
-        apriori: .011261,
+        buc: 0.032504,
+        tdc: 0.276284,
+        apriori: 0.011261,
     },
     {
         name: '70',
-        buc: .032504,
-        tdc: .276284,
-        apriori: .011261,
+        buc: 0.032504,
+        tdc: 0.276284,
+        apriori: 0.011261,
     },
     {
         name: '80',
-        buc: .032504,
-        tdc: .276284,
-        apriori: .011261,
+        buc: 0.032504,
+        tdc: 0.276284,
+        apriori: 0.011261,
     },
     {
         name: '90',
-        buc: .032504,
-        tdc: .276284,
-        apriori: .011261,
+        buc: 0.032504,
+        tdc: 0.276284,
+        apriori: 0.011261,
     },
     {
         name: '100',
-        buc: .032248,
-        tdc: .276284,
-        apriori: .010877,
+        buc: 0.032248,
+        tdc: 0.276284,
+        apriori: 0.010877,
     }
-];
+    ];
 
-export const testThirteenTimeData = [
+export const testTwelveTimeData = [
     {
         name: '1',
         buc: 0.008313223000016023,
@@ -1722,72 +1584,210 @@ export const testThirteenTimeData = [
     }
     ];
 
-export const testThirteenMemoryData = [
+export const testTwelveMemoryData = [
     {
         name: '1',
-        buc: .111476,
-        tdc: .347756,
-        apriori: .157072,
+        buc: 0.111476,
+        tdc: 0.347756,
+        apriori: 0.157072,
     },
     {
         name: '10',
-        buc: .053204,
-        tdc: .387556,
-        apriori: 1.050490,
+        buc: 0.053204,
+        tdc: 0.387556,
+        apriori: 0.150490,
     },
     {
         name: '20',
-        buc: .034868,
-        tdc: .276524,
-        apriori: .043018,
+        buc: 0.034868,
+        tdc: 0.276524,
+        apriori: 0.043018,
     },
     {
         name: '30',
-        buc: .032532,
-        tdc: .276524,
-        apriori: .043018,
+        buc: 0.032532,
+        tdc: 0.276524,
+        apriori: 0.043018,
     },
     {
         name: '40',
-        buc: .032468,
-        tdc: .276524,
-        apriori: .043018,
+        buc: 0.032468,
+        tdc: 0.276524,
+        apriori: 0.043018,
     },
     {
         name: '50',
-        buc: .032468,
-        tdc: .276524,
-        apriori: .043018,
+        buc: 0.032468,
+        tdc: 0.276524,
+        apriori: 0.043018,
     },
     {
         name: '60',
-        buc: .032468,
-        tdc: .276524,
-        apriori: .043018,
+        buc: 0.032468,
+        tdc: 0.276524,
+        apriori: 0.043018,
     },
     {
         name: '70',
-        buc: .032468,
-        tdc: .276524,
-        apriori: .043018,
+        buc: 0.032468,
+        tdc: 0.276524,
+        apriori: 0.043018,
     },
     {
         name: '80',
-        buc: .032468,
-        tdc: .276524,
-        apriori: .043018,
+        buc: 0.032468,
+        tdc: 0.276524,
+        apriori: 0.043018,
     },
     {
         name: '90',
-        buc: .032468,
-        tdc: .368828,
-        apriori: .043018,
+        buc: 0.032468,
+        tdc: 0.368828,
+        apriori: 0.043018,
     },
     {
         name: '100',
-        buc: .032468,
-        tdc: .311372,
-        apriori: .043018,
+        buc: 0.032468,
+        tdc: 0.311372,
+        apriori: 0.043018,
+    }
+];
+
+export const testThirteenTimeData = [
+    {
+        name: '1',
+        buc: 0.3347872960000018,
+        tdc: 3.9960057420000226,
+        apriori: 3.796830863000025,
+    },
+    {
+        name: '10',
+        buc: 0.3438934809999523,
+        tdc: 4.057995337999955,
+        apriori: 3.8474207680000063,
+    },
+    {
+        name: '20',
+        buc: 0.32854156700000203,
+        tdc: 4.090622246999999,
+        apriori: 3.773026313999992,
+    },
+    {
+        name: '30',
+        buc: 0.3327296740000065,
+        tdc: 4.096570991999954,
+        apriori: 3.8266960679999897,
+    },
+    {
+        name: '40',
+        buc: 0.332236445000035,
+        tdc: 4.0717568270000015,
+        apriori: 3.8579510659999983,
+    },
+    {
+        name: '50',
+        buc: 0.3251048120000064,
+        tdc: 3.9980583640000305,
+        apriori: 3.7871054980000167,
+    },
+    {
+        name: '60',
+        buc: 0.3392545270000369,
+        tdc: 4.0151762170000325,
+        apriori: 3.7891416809999896,
+    },
+    {
+        name: '70',
+        buc: 0.3300329799999986,
+        tdc: 3.980035178000037,
+        apriori: 3.8139302150000276,
+    },
+    {
+        name: '80',
+        buc: 0.32813260000000355,
+        tdc: 3.996086083000023,
+        apriori: 3.8040732190000313,
+    },
+    {
+        name: '90',
+        buc: 0.32779581500000177,
+        tdc: 3.9891750830000205,
+        apriori: 3.8007995259999916,
+    },
+    {
+        name: '100',
+        buc: 0.33873932900002046,
+        tdc: 4.046789759999967,
+        apriori: 3.768278409000004,
+    }
+    ];
+
+export const testThirteenMemoryData = [
+    {
+        name: '1',
+        buc: 0.321980,
+        tdc: 4.236988,
+        apriori: 0.064545,
+    },
+    {
+        name: '10',
+        buc: 0.320924,
+        tdc: 4.232508,
+        apriori: 0.064625,
+    },
+    {
+        name: '20',
+        buc: 0.320924,
+        tdc: 4.232508,
+        apriori: 0.064601,
+    },
+    {
+        name: '30',
+        buc: 0.320924,
+        tdc: 4.232508,
+        apriori: 0.064601,
+    },
+    {
+        name: '40',
+        buc: 0.320924,
+        tdc: 4.232508,
+        apriori: 0.064657,
+    },
+    {
+        name: '50',
+        buc: 0.320924,
+        tdc: 4.232564,
+        apriori: 0.064545,
+    },
+    {
+        name: '60',
+        buc: 0.320924,
+        tdc: 4.232564,
+        apriori: 0.064545,
+    },
+    {
+        name: '70',
+        buc: 0.320924,
+        tdc: 4.232564,
+        apriori: 0.064545,
+    },
+    {
+        name: '80',
+        buc: 0.320924,
+        tdc: 4.232564,
+        apriori: 0.064545,
+    },
+    {
+        name: '90',
+        buc: 0.320924,
+        tdc: 4.232564,
+        apriori: 0.064545,
+    },
+    {
+        name: '100',
+        buc: 0.320924,
+        tdc: 4.232564,
+        apriori: 0.064545,
     }
     ];
 
@@ -1864,13 +1864,13 @@ export const testFourteenTimeData = [
 export const testFourteenMemoryData = [
     {
         name: '1',
-        buc: 10.536976,
+        buc: 1.536976,
         tdc: 6.033956,
         apriori: 2.324809,
     },
     {
         name: '10',
-        buc: 10.031328,
+        buc: 1.031328,
         tdc: 5.347148,
         apriori: 2.325169,
     },
