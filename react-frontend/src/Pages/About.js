@@ -82,6 +82,17 @@ export default function About(){
                 <li>Supposing the input table 4, on the first pass of data, Apriori determines that single values in Table 5 are frequent.  Table 6 shows the candidate combinations that result from the combinations in Table 5.  The candidate combinations are then passed through, resulting in the cominbations and counts seen in Table 7.  3-set candidates are then generated for the candidate combinations as seen in Table 8, and then passed through resulting in Table 9.  Since  (a2, c2, d2) is not frequent no more candidate combinations can be derived, so the algorithm finishes executing.</li>
             </ul>
 
+            <h2>Testing and results</h2>
+            <p>Testing was completed on all of the algorithms. Various number of tuples, dimensionality, and cardinality were used to see how algorithm time and memory usage varied as the minimum support varied. These results displayed some interesting results, which can all be found under the Test Results page on the front end. The results displayed the following trends:</p>
+            <ul>
+                <li>TDC consistently performed the slowest, followed by Apriori, followed by BUC</li>
+                <li>TDC consistently utilized the most memory, followed by BUC, followed by Apriori</li>
+                <li>For the most part, as the number of tuples increased the memory usage and time for the algorithms increased</li>
+                <li>For the most part, as dimensionality and cardanality increased the memory usage and time for the algorithms increased</li>
+            </ul>
+            <p>Almost all of these results were expected by us, however, we expected TDC to outperform Apriori in time and memory usage. This is likely due to our form of implementation and having had more time we would have looked into improving our TDC implementation.</p>
+
+
         </ div >
     );
 }
