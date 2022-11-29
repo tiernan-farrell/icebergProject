@@ -1,24 +1,25 @@
 import React from 'react'
 import Graph from '../Components/Graph'
 import ResultsNav from '../Components/ResultsNav'
-import { testEightMemoryData, testEightTimeData, testNineMemoryData, testNineTimeData, testTenMemoryData, testTenTimeData, testEightMemory, testEightTime, testNineMemory, testNineTime, testTenMemory, testTenTime } from '../graphData'
-
-
+import { 
+    testThirteenMemory, testThirteenMemoryData, testThirteenTime, testThirteenTimeData,
+    testFourteenMemory, testFourteenMemoryData, testFourteenTime, testFourteenTimeData,
+    testFifteenMemory, testFifteenMemoryData, testFifteenTime, testFifteenTimeData,
+    testSixteenMemory, testSixteenMemoryData, testSixteenTime, testSixteenTimeData,    
+ } from '../graphData'
 
 const TenThousandTuples = (() => {
     return (
         <>
         <ResultsNav />
-        <Graph data={testEightTimeData} title={testEightTime}/>
-        <Graph data={testEightMemoryData} title={testEightMemory}/>
-
-
-        <Graph data={testNineTimeData} title={testNineTime}/>
-        <Graph data={testNineMemoryData} title={testNineMemory}/> 
-
-        <Graph data={testTenTimeData} title={testTenTime}/>
-        <Graph data={testTenMemoryData} title={testTenMemory}/>
-
+        <Graph data={testThirteenTimeData} title={testThirteenTime}/>
+        <Graph data={testThirteenMemoryData} title={testThirteenMemory}/>
+        <Graph data={testFourteenTimeData} title={testFourteenTime}/>
+        <Graph data={testFourteenMemoryData} title={testFourteenMemory}/>  
+        <Graph data={testFifteenTimeData} title={testFifteenTime}/>
+        <Graph data={testFifteenMemoryData} title={testFifteenMemory}/>
+        <Graph data={testSixteenTimeData} title={testSixteenTime}/>
+        <Graph data={testSixteenMemoryData} title={testSixteenMemory}/>
         </>
     )
 }
